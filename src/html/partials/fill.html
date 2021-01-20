@@ -1,1 +1,25 @@
 <include src="./article-title.html" title="Rellena" iconImg="far fa-keyboard"></include>
+
+<form action="/signup" class="form" method="POST">
+	<label for="name" class="form__label">Nombre completo</label>
+	<input id="name" name="name" type="text" class="form__input" placeholder="Ej: Sally Jill" required />
+
+	<label for="job" class="form__label">Puesto</label>
+	<input id="job" name="job" type="text" class="form__input" placeholder="Ej: Front-end unicorn" required />
+
+	<label for="image" class="form__label">Imagen de perfil</label>
+    <button class="form__label--bt">Añadir imagen</button>
+    <div class="form__imgContainer"></div>
+
+	<label for="email" class="form__label">Email</label>
+	<input id="email" name="email" type="email" class="form__input" placeholder="Ej: sally-hill@gmail.com" required />
+
+	<label for="phone" class="form__label">Teléfono</label>
+	<input id="phone" name="phone" type="phone" class="form__input" placeholder="Ej: 555-55-55-55" />
+
+	<label for="linkedin" class="form__label">Linkedin</label>
+	<input id="linkedin" name="linkedin" type="text" class="form__input" placeholder="Ej: linkedin.com/in/sally.hill" required />
+
+	<label for="github" class="form__label">GitHub</label>
+	<input id="github" name="github" type="text" class="form__input" placeholder="Ej: @sally-hill" required />
+</form>
