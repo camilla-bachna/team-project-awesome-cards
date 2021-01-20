@@ -1,8 +1,39 @@
-.form {    
+.form {
+    font-family: $font-text;
+    margin: 25px 20px 30px;  //Estos márgenes de izq. y dcha. irían en el wrapper.
+    border-bottom: 1px $placeholder-text solid ;
     &__label {
-        width: 100%;
+        display: block;        
+        color: $main-text;
+        margin-bottom: 7px;
+        @include sizeLine(14px, 20px);
+        &--bt {
+            display: inline-block;
+            width: 140px;
+            height: 30px;
+            color: white;
+            background-color: $icons;
+            border: none;            
+            border-radius: 3px;
+            box-shadow: 0 0 5px $shadow;
+            margin-bottom: 20px;
+            @include sizeLine(14px, 20px);
+        }
     }
     &__input {
-        width: 100%;;
+        width: 100%;
+        height: 30px;
+        border: 1px $border solid;
+        padding: 0 0 7px 9px;
+        margin-bottom: 20px;
+        &::placeholder {
+            color: $placeholder-text;
+        }
+    }
+    &__imgContainer {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border: 1px $border solid;
     }
 }

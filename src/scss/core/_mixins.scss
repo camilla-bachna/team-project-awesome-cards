@@ -9,3 +9,8 @@
         @content;
     }
 }
+
+@mixin sizeLine($fontSize, $lineHeight) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}
