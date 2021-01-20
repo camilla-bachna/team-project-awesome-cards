@@ -1,0 +1,37 @@
+.footer {
+  height: 110px;
+  width: 100%;
+  border: solid 1px #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+  &__copyright {
+    margin-top: 18px;
+    text-align: center;
+    font-family: $font-text;
+    font-size: 14px;
+    color: $footer-text;
+    opacity: 0.5;
+    display: block;
+    @include tablet {
+        margin: 18px 0 22px 41px;
+      }
+  }
+  &__link{
+    text-align: center;
+  }
+  &__img {
+    width: 103px;
+    height: 40px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    @include tablet {
+        margin: 10px 40px 10px 0;
+      }
+  }
+}

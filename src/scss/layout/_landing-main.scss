@@ -2,10 +2,20 @@
   background-color: $main-bg;
   height: 458px;
   width: 100%;
+  @include tablet {
+    height: 963px;
+  }
   &__img {
     margin-top: 95px;
+    margin-left: 35px;
     height: 63px;
     width: 250px;
+    @include tablet {
+      margin-top: 355px;
+      margin-left: 175px;
+      height: 105px;
+      width: 419px;
+    }
   }
   &__title {
     color: $icons;
@@ -14,12 +24,19 @@
     font-weight: 900;
     margin-top: 35.4px;
     text-align: center;
+    @include tablet {
+      font-size: 24px;
+      margin-top: 31px;
+    }
   }
   &__text {
     color: $main-text;
     font-family: $font-text;
     font-size: 12.8px;
     text-align: center;
+    @include tablet {
+      font-size: 16px;
+    }
   }
   &__list {
     border-radius: 4px;
@@ -31,6 +48,12 @@
     margin-bottom: 38.6px;
     list-style: none;
     display: flex;
+    @include tablet {
+      margin-top: 27px;
+      width: 325px;
+      height: 86px;
+      margin-bottom: 186px;
+    }
     &--item {
       color: $secondary-text;
       font-family: $font-text;
@@ -45,6 +68,9 @@
     color: white;
     text-decoration: none;
     font-family: $font-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
     font-weight: 600;
     width: 129px;
     height: 42px;
@@ -53,6 +79,9 @@
     padding: 10px 20px;
     border-radius: 21px;
     margin-bottom: 30px;
+    @include tablet {
+      margin-bottom: 59px;
+    }
   }
 }
 
