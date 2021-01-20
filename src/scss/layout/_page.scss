@@ -1,0 +1,19 @@
+.wrapper {
+    margin: 0 20px;
+}
+
+.article {
+    &__icon {
+        display: inline;
+        color: $icons; 
+        font-size: 18px;        
+    }
+    &__title {
+        font-family: $font-text;
+        font-weight: 600;
+        font-size: 18px;
+        color: $secondary-text;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
