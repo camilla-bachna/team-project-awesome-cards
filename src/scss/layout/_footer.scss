@@ -1,13 +1,15 @@
 .footer {
-  height: 110px;
   width: 100%;
-  border: solid 1px #d8d8d8;
-  display: flex;
-  flex-direction: column;
-  @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
+  border-top: solid 1px #d8d8d8;
+  .wrapper {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 60px;
+    }
   }
   &__copyright {
     margin-top: 18px;
@@ -18,10 +20,10 @@
     opacity: 0.5;
     display: block;
     @include tablet {
-        margin: 18px 0 22px 41px;
-      }
+      margin: 18px 0 22px 41px;
+    }
   }
-  &__link{
+  &__link {
     text-align: center;
   }
   &__img {
@@ -31,7 +33,7 @@
     margin-top: 12px;
     margin-bottom: 20px;
     @include tablet {
-        margin: 10px 40px 10px 0;
-      }
+      margin: 10px 40px 10px 0;
+    }
   }
 }
