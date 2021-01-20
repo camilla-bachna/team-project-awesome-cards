@@ -1,0 +1,21 @@
+.share {
+  display: flex;
+  justify-content: center;
+  padding: 33px 0 70px;
+  &__button {
+    background-color: $icons;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $footer-text;
+    font-size: 1.375rem;
+    border: none;
+    margin: auto;
+    &--text {
+      font-size: 1.125rem;
+      padding: 14px 0;
+    }
+  }
+}
