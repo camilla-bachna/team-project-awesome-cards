@@ -20,6 +20,14 @@
     border-radius: 15px;
     background-color: transparent;
     margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: $icons;
+    }
+    &:active {
+      background-color: $bt;
+    }
   }
   &__data {
     height: 329px;
