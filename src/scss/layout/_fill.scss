@@ -1,6 +1,6 @@
 .form {
     font-family: $font-text;
-    margin: 25px 20px 30px;  //Estos márgenes de izq. y dcha. irían en el wrapper.
+    margin: 25px 0 30px;  
     border-bottom: 1px $placeholder-text solid ;
     &__label {
         display: block;        
