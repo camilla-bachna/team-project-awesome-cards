@@ -1,0 +1,61 @@
+.page {
+  background-color: $main-bg;
+  height: 458px;
+  width: 100%;
+  &__img {
+    margin-top: 95px;
+    height: 63px;
+    width: 250px;
+  }
+  &__title {
+    color: $icons;
+    font-family: $font-title;
+    font-size: 19.2px;
+    font-weight: 900;
+    margin-top: 35.4px;
+    text-align: center;
+  }
+  &__text {
+    color: $main-text;
+    font-family: $font-text;
+    font-size: 12.8px;
+    text-align: center;
+  }
+  &__list {
+    border-radius: 4px;
+    border: solid 1.6px rgba(225, 115, 52, 0.21);
+    width: 268px;
+    height: 73.8px;
+    margin: auto;
+    margin-top: 17.8px;
+    margin-bottom: 38.6px;
+    list-style: none;
+    display: flex;
+    &--item {
+      color: $secondary-text;
+      font-family: $font-text;
+      width: 60px;
+      height: 48.8px;
+      margin: 10px;
+      text-align: center;
+    }
+  }
+  &__link {
+    background-color: $bt;
+    color: white;
+    text-decoration: none;
+    font-family: $font-text;
+    font-weight: 600;
+    width: 129px;
+    height: 42px;
+    margin: auto;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 21px;
+    margin-bottom: 30px;
+  }
+}
+
+.icon {
+  color: $icons;
+}
