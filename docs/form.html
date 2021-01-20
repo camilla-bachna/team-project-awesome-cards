@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome cards</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2e0e49a34.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+      <header class="header">
+        <div class="wrapper">
+          <a href="./index.html" class="header__link" title="Volver a la portada">
+            <img class="header__img" src="./assets/images/title.svg" alt="Awesome profile-cards" />
+          </a>
+        </div>
+      </header>
+
+      <section class="card">
+          <div class="wrapper">
+              <button class="card__reset">Reset</button>
+              
+          </div>
+      </section>
+      <main class="main">
+        <div class="wrapper">
+          <article class="article">
+	<div class="article__container">
+		<i class="far fa-object-ungroup article__icon"></i>
+		<h2 class="article__title">Diseña</h2>
+	</div>
+	<i class="fas fa-chevron-down article__icon--collapsible"></i>
+	<i class="fas fa-chevron-up article__icon--collapsible"></i>
+</article>
+
+
+          <div class="design">
+              <h2 class="design__title">Colores</h2>
+
+              <div class="design__colorcontainer">
+                  <label class="design__squareLabel">
+                      <input type="radio" name="palette">
+                      <ul class="palette">
+                          <li class="design__squareColor color1-1"></li>
+                          <li class="design__squareColor color1-2"></li>
+                          <li class="design__squareColor color1-3"></li>
+                      </ul>
+                  </label>
+
+                  <label class="design__squareLabel">
+                      <input type="radio" name="palette">
+                      <ul class="palette">
+                          <li class="design__squareColor color2-1"></li>
+                          <li class="design__squareColor color2-2"></li>
+                          <li class="design__squareColor color2-3"></li>
+                      </ul>
+                  </label>
+
+                  <label class="design__squareLabel">
+                      <input type="radio" name="palette">
+                      <ul class="palette">
+                          <li class="design__squareColor color3-1"></li>
+                          <li class="design__squareColor color3-2"></li>
+                          <li class="design__squareColor color3-3"></li>
+                      </ul>
+                  </label>
+              </div>
+
+          </div>
+          <article class="article">
+	<div class="article__container">
+		<i class="far fa-keyboard article__icon"></i>
+		<h2 class="article__title">Rellena</h2>
+	</div>
+	<i class="fas fa-chevron-down article__icon--collapsible"></i>
+	<i class="fas fa-chevron-up article__icon--collapsible"></i>
+</article>
+
+
+          <form action="/signup" class="form" method="POST">
+          	<label for="name" class="form__label">Nombre completo</label>
+          	<input id="name" name="name" type="text" class="form__input" placeholder="Ej: Sally Jill" required />
+
+          	<label for="job" class="form__label">Puesto</label>
+          	<input id="job" name="job" type="text" class="form__input" placeholder="Ej: Front-end unicorn" required />
+
+          	<label for="photo" class="form__label">Imagen de perfil</label>
+          	<button class="form__label--bt">Añadir imagen</button>
+              <!-- <input id="photo" name="photo" type="file" class="" /> -->
+              <div class="form__imgContainer"></div>
+
+          	<label for="email" class="form__label">Email</label>
+          	<input id="email" name="email" type="email" class="form__input" placeholder="Ej: sally-hill@gmail.com" required />
+
+          	<label for="phone" class="form__label">Teléfono</label>
+          	<input id="phone" name="phone" type="phone" class="form__input" placeholder="Ej: 555-55-55-55" />
+
+          	<label for="linkedin" class="form__label">Linkedin</label>
+          	<input id="linkedin" name="linkedin" type="text" class="form__input" placeholder="Ej: linkedin.com/in/sally.hill" required />
+
+          	<label for="github" class="form__label">GitHub</label>
+          	<input id="github" name="github" type="text" class="form__input" placeholder="Ej: @sally-hill" required />
+          </form>
+
+          <article class="article">
+	<div class="article__container">
+		<i class="fas fa-share-alt article__icon"></i>
+		<h2 class="article__title">Comparte</h2>
+	</div>
+	<i class="fas fa-chevron-down article__icon--collapsible"></i>
+	<i class="fas fa-chevron-up article__icon--collapsible"></i>
+</article>
+
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="wrapper">
+          <small class="footer__copyright">Awesome profile-cards &copy; 2021</small>
+          <a class="footer__link" href="http://www.adalab.es" target="_blank" title="Ir a web de Adalab">
+            <img class="footer__img"src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+          </a>
+        </div>
+      </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
