@@ -1,37 +1,6 @@
 .main {
-    background-image: linear-gradient($main-bg, white);
+  background-image: linear-gradient($main-bg, white);
 }
 .wrapper {
-    margin: 0 20px;
+  margin: 0 20px;
 }
-<<<<<<< HEAD
-
-.article {    
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &__container {
-        display: flex;
-    }
-    &__icon {
-        //display: inline;
-        color: $icons; 
-        font-size: 18px;  
-        margin-right: 10px;
-        &--collapsible {
-            color: $secondary-text;
-            //display: inline;
-        }
-    }
-    &__title {
-        font-family: $font-text;
-        font-weight: 600;
-        font-size: 18px;
-        color: $secondary-text;
-        text-transform: uppercase;
-        //display: inline;
-    }
-}
-=======
->>>>>>> master
