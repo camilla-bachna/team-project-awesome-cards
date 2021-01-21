@@ -1,5 +1,8 @@
 .main {
-    background-image: linear-gradient($main-bg, white);
+    background-image: linear-gradient(
+        to bottom, 
+        $main-bg,
+        white);
 }
 .wrapper {
     margin: 0 20px;
