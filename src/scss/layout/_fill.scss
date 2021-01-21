@@ -1,12 +1,12 @@
 .form {
     font-family: $font-text;
-    margin: 25px 0 30px;  
+    margin: rem(25) 0 rem(30);  
     border-bottom: 1px $placeholder-text solid ;
     &__label {
         display: block;        
         color: $main-text;
         margin-bottom: 7px;
-        @include sizeLine(14px, 20px);
+        @include sizeLine(rem(14), rem(20));
         &--bt {
             display: inline-block;
             width: 140px;
@@ -35,5 +35,10 @@
         width: 30px;
         height: 30px;        
         border: 1px $border solid;
+        margin-left: 20px;
     }
+}
+
+.form__label-div {
+    display: flex;
 }

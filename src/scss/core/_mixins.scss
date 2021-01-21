@@ -14,3 +14,15 @@
 	font-size: $fontSize;
 	line-height: $lineHeight;
 } //de momento lo he usado en un solo lugar.
+
+@mixin openRegular {
+	font-family: $font-text;
+	font-weight: 400;
+	@content;
+}
+
+@mixin openSemiBold {
+	font-family: $font-text;
+	font-weight: 600;
+	@content;
+}
