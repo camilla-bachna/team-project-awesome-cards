@@ -6,6 +6,14 @@
     justify-content: space-between;
     &__container {
         display: flex;
+        @include tablet {
+            margin-top: rem(27);
+        }
+        &--arrows {
+            @include tablet {
+                margin-top: rem(20);                
+            }
+        }
     }
     &__icon {
         color: $icons;

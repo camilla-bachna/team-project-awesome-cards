@@ -3,10 +3,16 @@
         to bottom, 
         $main-bg,
         white);
+        @include tablet {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
 }
 .wrapper {
     margin: 0 rem(20);
     @include tablet {
+        width: 330px;
         margin: 0 rem(40);
     }
     @include desktop {

@@ -1,5 +1,5 @@
 .form {
-    font-family: $font-text;
+    @include openRegular;
     margin: rem(25) 0 rem(10);
     padding-bottom: rem(10);
     border-bottom: 1px $placeholder-text solid ;
@@ -31,8 +31,12 @@
         border: rem(1) $border solid;
         padding: rem(3) 0 rem(7) rem(9);
         margin-bottom: rem(20);
-        &::placeholder {
-            color: $placeholder-text;
+        &::placeholder {            
+            @include openRegular {
+                @include sizeLine(rem(14), rem(20));
+                color: $placeholder-text;
+            }
+            
         }
     }
     &__img--container {
