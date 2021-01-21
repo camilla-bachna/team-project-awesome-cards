@@ -1,39 +1,40 @@
 .footer {
   width: 100%;
-  border-top: solid 1px $footer-border;
-  .wrapper {
-    height: 110px;
+  border-top: solid rem(1) $footer-border;
+  &__container {
+    height: 19.5vh;
     display: flex;
     flex-direction: column;
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      height: 60px;
+      height: 6vh;
     }
   }
   &__copyright {
-    margin-top: 18px;
+    margin-top: rem(18);
     text-align: center;
-    font-family: $font-text;
-    font-size: 14px;
+    @include openRegular;
+    font-size: rem(14);
+    line-height: rem(20);
     color: $footer-text;
     opacity: 0.5;
     display: block;
     @include tablet {
-      margin: 18px 0 22px 41px;
+      margin: rem(18) 0 rem(22) rem(41);
     }
   }
   &__link {
     text-align: center;
   }
   &__img {
-    width: 103px;
-    height: 40px;
+    width: rem(103);
+    height: rem(40);
     margin: auto;
-    margin-top: 12px;
-    margin-bottom: 20px;
+    margin-top: rem(12);
+    margin-bottom: rem(20);
     @include tablet {
-      margin: 10px 40px 10px 0;
+      margin: rem(10) rem(40) rem(10) 0;
     }
   }
 }
