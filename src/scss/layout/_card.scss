@@ -1,25 +1,40 @@
 .card {
   font-family: $font-card;
+  margin-bottom: rem(27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //width: 100%;
   background-image: linear-gradient(
     to bottom,
     $gradient-1 25%,
     $gradient-2 100%
   );
-  margin-bottom: 27px;
-  .wrapper {
-    display: inline-block;
-    margin: 38px 35px 40px 45px;
-    text-align: left;
+  @include tablet {
+    width: 40%;
+    margin: rem(23) 0 rem(21);
+    border-radius: rem(6);
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: rem(38) 0 rem(40);
+    @include tablet {
+      margin-top: rem(173);
+    }
   }
   &__reset {
-    font-family: $font-text;
-    color: $secondary-text;
-    border: 1px solid white;
-    padding: 6px 15px 6px 5px;
-    text-transform: uppercase;
-    border-radius: 15px;
+    @include openRegular {
+      font-size: rem(12);
+      color: $secondary-text;
+      text-transform: uppercase;
+    }
+    border: rem(1) solid white;
+    padding: rem(6) rem(15) rem(6) rem(5);
+    border-radius: rem(15);
     background-color: transparent;
-    margin-bottom: 20px;
+    margin: 0 rem(150) rem(20) 0;
     cursor: pointer;
     &:hover {
       color: white;
@@ -30,48 +45,49 @@
     }
   }
   &__data {
-    height: 329px;
-    width: 240px;
+    height: rem(329);
+    width: rem(240);
     background-color: white;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2),
+      0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
     & .name {
       display: inline-block;
-      font-size: 18px;
+      font-size: rem(18);
       font-weight: 700;
       color: $main-text;
-      border-left: 5px solid $border-text;
-      padding-left: 15px;
-      margin-top: 21px;
+      border-left: rem(5) solid $border-text;
+      padding-left: rem(15);
+      margin-top: rem(21);
     }
     & .job {
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       color: $secondary-text;
-      border-left: 5px solid $border-text;
-      padding-left: 15px;
-      margin-bottom: 8px;
+      border-left: rem(5) solid $border-text;
+      padding-left: rem(15);
+      margin-bottom: rem(8);
     }
     &--list {
       list-style-type: none;
       display: flex;
-      margin: 10px 20px 12px;
+      margin: rem(10) rem(20) rem(12);
       .circle {
-        border: 2px solid $border;
+        border: rem(2) solid $border;
         border-radius: 50%;
-        height: 32px;
-        width: 32px;
+        height: rem(32);
+        width: rem(32);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 10px;
+        margin-right: rem(10);
       }
     }
     &--icon {
       color: $main-text;
-      padding: 3px 5px;
+      padding: rem(3) rem(5);
     }
   }
   .fa-trash-alt {
-    padding: 0 6px 0 10px;
+    padding: 0 rem(6) 0 rem(10);
   }
 }
