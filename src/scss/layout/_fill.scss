@@ -1,83 +1,56 @@
 .form {
-<<<<<<< HEAD
-  font-family: $font-text;
-  margin: 25px 0 30px;
+  @include openRegular;
+  margin: rem(25) 0 rem(10);
+  padding-bottom: rem(10);
   border-bottom: 1px $placeholder-text solid;
   &__label {
     display: block;
     color: $main-text;
-    margin-bottom: 7px;
-    @include sizeLine(14px, 20px);
+    margin-bottom: rem(7);
+    @include sizeLine(rem(14), rem(20));
     &--bt {
       display: inline-block;
-      width: 140px;
-      height: 30px;
+      width: rem(140);
+      height: rem(30);
       color: white;
       background-color: $icons;
       border: none;
-      border-radius: 3px;
-      box-shadow: 0 0 5px $shadow;
-      margin-bottom: 20px;
-      @include sizeLine(14px, 20px);
+      border-radius: rem(3);
+      box-shadow: 0 0 rem(5) $shadow;
+      margin-bottom: rem(20);
+      @include sizeLine(rem(14), rem(20));
+      cursor: pointer;
+      &:hover {
+        background-color: $bt;
+      }
     }
   }
   &__input {
     width: 100%;
-    height: 30px;
-    border: 1px $border solid;
-    padding: 0 0 7px 9px;
-    margin-bottom: 20px;
+    height: rem(30);
+    border: rem(1) $border solid;
+    padding: rem(3) 0 rem(7) rem(9);
+    margin-bottom: rem(20);
     &::placeholder {
-      color: $placeholder-text;
-=======
-    font-family: $font-text;
-    margin: rem(25) 0 rem(30);  
-    border-bottom: 1px $placeholder-text solid ;
-    &__label {
-        display: block;        
-        color: $main-text;
-        margin-bottom: 7px;
+      @include openRegular {
         @include sizeLine(rem(14), rem(20));
-        &--bt {
-            display: inline-block;
-            width: 140px;
-            height: 30px;
-            color: white;
-            background-color: $icons;
-            border: none;            
-            border-radius: 3px;
-            box-shadow: 0 0 5px $shadow;
-            margin-bottom: 20px;
-            @include sizeLine(14px, 20px);
-        }
-    }
-    &__input {
-        width: 100%;
-        height: 30px;
-        border: 1px $border solid;
-        padding: 0 0 7px 9px;
-        margin-bottom: 20px;
-        &::placeholder {
-            color: $placeholder-text;
-        }
-    }
-    &__img--container {
-        display: inline-block;
-        width: 30px;
-        height: 30px;        
-        border: 1px $border solid;
-        margin-left: 20px;
->>>>>>> 31f270add0d8d70d63516a5f0ad3c7ddf6258766
+        color: $placeholder-text;
+      }
     }
   }
-  &__imgContainer {
-    width: 30px;
-    height: 30px;
+  &__img--container {
     display: inline-block;
-    border: 1px $border solid;
+    width: rem(30);
+    height: rem(30);
+    border: rem(1) $border solid;
+    margin-left: rem(20);
   }
 }
 
 .form__label-div {
-    display: flex;
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
