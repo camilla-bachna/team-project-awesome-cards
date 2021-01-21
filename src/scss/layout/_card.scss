@@ -1,0 +1,77 @@
+.card {
+  height: 457px;
+  font-family: $font-card;
+  background-image: linear-gradient(
+    to bottom,
+    $gradient-1 25%,
+    $gradient-2 100%
+  );
+  .wrapper {
+    display: inline-block;
+    margin: 38px 35px 40px 45px;
+    text-align: left;
+  }
+  &__reset {
+    font-family: $font-text;
+    color: $secondary-text;
+    border: 1px solid white;
+    padding: 6px 15px 6px 5px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: $icons;
+    }
+    &:active {
+      background-color: $bt;
+    }
+  }
+  &__data {
+    height: 329px;
+    width: 240px;
+    background-color: white;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    & .name {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      color: $main-text;
+      border-left: 5px solid $border-text;
+      padding-left: 15px;
+      margin-top: 21px;
+    }
+    & .job {
+      font-size: 16px;
+      font-weight: 400;
+      color: $secondary-text;
+      border-left: 5px solid $border-text;
+      padding-left: 15px;
+      margin-bottom: 8px;
+    }
+    &--list {
+      list-style-type: none;
+      display: flex;
+      margin: 10px 20px 12px;
+      .circle {
+        border: 2px solid $border;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+    }
+    &--icon {
+      color: $main-text;
+      padding: 3px 5px;
+    }
+  }
+  .fa-trash-alt {
+    padding: 0 6px 0 10px;
+  }
+}
