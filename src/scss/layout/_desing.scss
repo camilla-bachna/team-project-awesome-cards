@@ -1,11 +1,11 @@
 .design {
   display: flex;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: rem(12);
 
   &__title {
     font-family: $font-text;
-    font-size: 0.875rem;
+    font-size: rem(14);
     color: $secondary-text;
     text-transform: uppercase;
   }
@@ -14,13 +14,13 @@
   }
   .palette {
     display: flex;
-    margin-left: 10px;
+    margin-left: rem(10);
   }
   &__squareColor {
     list-style-type: none;
-    width: 30px;
-    height: 25px;
-    margin-bottom: 20px;
+    width: rem(30);
+    height: rem(25);
+    margin-bottom: rem(20);
   }
 }
 

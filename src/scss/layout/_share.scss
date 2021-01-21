@@ -1,21 +1,21 @@
 .share {
   display: flex;
   justify-content: center;
-  padding: 33px 0 70px;
+  padding: rem(30) 0 rem(70);
   &__button {
     background-color: $icons;
-    width: 199px;
-    height: 50px;
-    border-radius: 12px;
+    width: 1rem (199);
+    height: rem(50);
+    border-radius: rem(12);
     color: white;
     text-transform: uppercase;
     font-family: $footer-text;
-    font-size: 1.375rem;
+    font-size: rem(22);
     border: none;
     margin: auto;
     &--text {
-      font-size: 1.125rem;
-      padding: 14px 0;
+      font-size: rem(18);
+      padding: rem(14) 0;
     }
   }
 }
