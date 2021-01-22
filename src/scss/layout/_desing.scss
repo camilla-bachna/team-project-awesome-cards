@@ -11,6 +11,8 @@
   }
   &__squareLabel {
     display: flex;
+    align-items: center;
+    margin-bottom: rem(20);
   }
   .palette {
     display: flex;
@@ -20,7 +22,6 @@
     list-style-type: none;
     width: rem(30);
     height: rem(25);
-    margin-bottom: rem(20);
   }
 }
 
