@@ -3,13 +3,24 @@
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-image: none;
+  }
+  &__pageContainer {
+    @include desktop {
+      margin: 0 rem(40);
+    }
+  }
+}
+.bgContainer {
+  @include tablet {
+    background-image: linear-gradient(to bottom, $main-bg, white);
   }
 }
 .wrapper {
   margin: 0 rem(20);
   @include tablet {
-    width: 330px;
+    //width: 330px;
     margin: 0 rem(40);
   }
   @include desktop {
