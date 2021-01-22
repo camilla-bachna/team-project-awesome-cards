@@ -1,22 +1,23 @@
 .page {
-  background-color: $main-bg;
-  height: 80.5vh;
+  
+  /* height: 80.5vh;    delete
   width: 100%;
   @include tablet {
-    height: 94vh;
-  }
+   height: 94vh;  
+  }*/
   &__container {
+    background-color: $main-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   &__img {
-    margin-top: rem(95);
+    margin-top: 20vh;
     height: rem(63);
     width: rem(250);
     @include tablet {
-      margin-top: rem(350);
+      margin-top: 20vh;
       height: rem(105);
       width: rem(419);
     }
@@ -59,7 +60,7 @@
     height: rem(73.8);
     margin: auto;
     margin-top: rem(17.8);
-    margin-bottom: rem(38.6);
+    margin-bottom: rem(38.6); // % o vh
     list-style: none;
     display: flex;
     justify-content: space-evenly;

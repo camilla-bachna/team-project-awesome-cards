@@ -2,13 +2,13 @@
   width: 100%;
   border-top: solid rem(1) $footer-border;
   &__container {
-    height: 19.5vh;
+    height: 110px;
     display: flex;
     flex-direction: column;
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      height: 6vh;
+      height: 60px; // 6vh
     }
   }
   &__copyright {
