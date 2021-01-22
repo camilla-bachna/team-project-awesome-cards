@@ -1,6 +1,12 @@
 .header {
+    &__wrapper {
+        @include tablet {
+            margin: 0 auto;
+            max-width: 990px;
+        }
+    }
     &__img {
         width: rem(200);
-        margin: rem(30) 0 rem(30) rem(20);        
+        margin: rem(30) 0 rem(30) rem(40);
     }
 }
