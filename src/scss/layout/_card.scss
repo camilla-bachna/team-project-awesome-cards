@@ -4,20 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //width: 100%;
+  width: 100%;
   background-image: linear-gradient(
     to bottom,
     $gradient-1 25%,
     $gradient-2 100%
   );
   @include tablet {
-    width: 50%;
-    margin: rem(23) 0 rem(21);
+    width: 500px;
+    height: 100%;
     border-radius: rem(6);
+    margin-bottom: 0;
   }
-  @include desktop {
+ /* @include desktop {
     width: 60%;
-  }
+  }*/
   &__container {
     display: flex;
     flex-direction: column;
