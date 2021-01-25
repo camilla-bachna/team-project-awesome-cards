@@ -1,25 +1,25 @@
 .page {
-  
-  /* height: 80.5vh;    delete
   width: 100%;
+  height: 94vh;
+  background-color: $main-bg;
   @include tablet {
-   height: 94vh;  
-  }*/
+    height: 100vh; 
+  } 
   &__container {
-    background-color: $main-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   &__img {
-    margin-top: 20vh;
+    margin-top: 16vh;
     height: rem(63);
     width: rem(250);
     @include tablet {
-      margin-top: 20vh;
+      margin-top: 25vh;
       height: rem(105);
       width: rem(419);
+      
     }
   }
   &__title {
@@ -57,10 +57,10 @@
     border-radius: rem(4);
     border: solid rem(1.6) rgba(225, 115, 52, 0.21);
     width: rem(268);
-    height: rem(73.8);
+    height: rem(73);
     margin: auto;
-    margin-top: rem(17.8);
-    margin-bottom: rem(38.6); // % o vh
+    margin-top: rem(17);
+    margin-bottom: 6.5vh;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -69,7 +69,7 @@
       margin-top: rem(27);
       width: rem(325);
       height: rem(86);
-      margin-bottom: rem(186);
+      margin-bottom: 13vh;
     }
     &--item {
       color: $secondary-text;
