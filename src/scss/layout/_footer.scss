@@ -1,14 +1,20 @@
 .footer {
   width: 100%;
   border-top: solid rem(1) $footer-border;
+  // position debería ser static en la página form.html ¿se haria con JS?
+  position: fixed;
+  background-color: white;
+  @include tablet {
+    position: static;
+  }
   &__container {
-    height: 110px;
     display: flex;
     flex-direction: column;
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      height: 60px; // 6vh
+      align-items: center; // añado para que queden centradas con respecto a la altura
+      // height: 60px; // 6vh
     }
   }
   &__copyright {

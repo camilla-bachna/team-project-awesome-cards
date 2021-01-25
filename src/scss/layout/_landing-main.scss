@@ -1,16 +1,17 @@
 .page {
-  
   /* height: 80.5vh;    delete
   width: 100%;
   @include tablet {
    height: 94vh;  
   }*/
+
   &__container {
     background-color: $main-bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1; //añado flex grow para jugar con el espacio sobrante de la página
   }
   &__img {
     margin-top: 20vh;
@@ -53,14 +54,15 @@
       font-size: rem(16);
     }
   }
+  // elimino márgenes que impiden que el btn comenzar se mueva según crece o no la página
   &__list {
     border-radius: rem(4);
     border: solid rem(1.6) rgba(225, 115, 52, 0.21);
     width: rem(268);
     height: rem(73.8);
-    margin: auto;
+    // margin: auto;
     margin-top: rem(17.8);
-    margin-bottom: rem(38.6); // % o vh
+    // margin-bottom: rem(38.6); // % o vh
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -69,7 +71,7 @@
       margin-top: rem(27);
       width: rem(325);
       height: rem(86);
-      margin-bottom: rem(186);
+      // margin-bottom: rem(186);
     }
     &--item {
       color: $secondary-text;

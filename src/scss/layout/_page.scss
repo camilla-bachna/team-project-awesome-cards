@@ -12,10 +12,19 @@
     }
   }
 }
-.bgContainer {
+// añado clase mainWrapper al main de landing para poderle flex-grow
+.mainWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 82vh;
   @include tablet {
-    background-image: linear-gradient(to bottom, $main-bg, white);
+    height: 93vh;
   }
+}
+.bgContainer {
+  // @include tablet {
+  background-image: linear-gradient(to bottom, $main-bg, white);
+  // }
 }
 .wrapper {
   margin: 0 rem(20);
