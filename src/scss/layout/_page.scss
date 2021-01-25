@@ -2,10 +2,10 @@
 	@include tablet {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: space-between;
-    background-image: none;
-    max-width: 990px;
-    margin: 0 auto;
+		
+		background-image: none;
+		max-width: 990px;
+		margin: 0 auto;
 	}
 	&__pageContainer {
 		@include desktop {
@@ -25,17 +25,17 @@
 			}
 		}
 		&--design {
-      margin: 0 20px;
-      @include tablet {
-        margin: 0 0 0 40px;
-      }
+			margin: 0 rem(20);
+			@include tablet {
+				width: 40%;
+				margin: rem(20) 0 0 rem(40);
+			}
 		}
 	}
 }
 .wrapper {
 	margin: 0 rem(20);
-	@include tablet {
-		//width: 330px;
+	@include tablet {		
 		margin: 0 rem(40);
 	}
 	@include desktop {
