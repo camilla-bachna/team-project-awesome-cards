@@ -1,10 +1,7 @@
 .article {
 	border-bottom: 1px $placeholder-text solid; // ¿este border tiene que desaparecer cuando se despliega?
-    margin-top: rem(10);
-    padding-bottom: rem(7);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	margin-top: rem(10);
+	padding-bottom: rem(7);
 	&__container {
 		display: flex;
 		@include tablet {
@@ -15,7 +12,7 @@
 		}
 	}
 	&__icon {
-        margin-right: rem(10);
+		margin-right: rem(10);
 		color: $icons;
 		@include sizeLine(rem(18), rem(18));
 		&--collapsible {
@@ -24,21 +21,14 @@
 		}
 	}
 	&__title {
-		width: 60%;
-
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		@include openSemiBold {
 			font-size: rem(18);
 			color: $secondary-text;
 			text-transform: uppercase;
 		}
 	}
-}
-
-.left {
-	display: flex;
-	align-items: center;
-}
-.right {
-	display: flex;
-	align-items: center;
 }
