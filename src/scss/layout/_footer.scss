@@ -1,23 +1,22 @@
 .footer {
-  // position: fixed;
-  // bottom: 0;
-  // z-index: 1;
-
+  grid-row: 2;
   width: 100%;
   border-top: solid rem(1) $footer-border;
   background-color: white;
+  height: rem(110);
+  @include tablet {
+   height: rem(60);
+  }
   &__container {
-    height: rem(110);
     display: flex;
     flex-direction: column;
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
-      height: rem(60);
     }
   }
   &__copyright {
-    margin-top: rem(18);
+    margin-top: 3.1vh;
     text-align: center;
     @include openRegular;
     font-size: rem(14);
@@ -26,7 +25,9 @@
     opacity: 0.5;
     display: block;
     @include tablet {
-      margin: rem(18) 0 rem(22) rem(41);
+      margin-top: 1.7vh;
+      margin-left: rem(41);
+      margin-bottom: rem(22);
     }
   }
   &__link {
@@ -36,10 +37,12 @@
     width: rem(103);
     height: rem(40);
     margin: auto;
-    margin-top: rem(12);
-    margin-bottom: rem(20);
+    margin-top: 2.1vh;
+    margin-bottom: 3.5vh;
     @include tablet {
-      margin: rem(10) rem(40) rem(10) 0;
+      margin-top: 0.9vh;
+      margin-right: rem(40);
+      margin-bottom: rem(10);
     }
   }
 }
