@@ -1,45 +1,53 @@
 .main--flex {
-	@include tablet {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+
     background-image: none;
     max-width: 990px;
     margin: 0 auto;
-	}
-	&__pageContainer {
-		@include desktop {
-			margin: 0 rem(40);
-		}
-	}
+  }
+  &__pageContainer {
+    @include desktop {
+      margin: 0 rem(40);
+    }
+  }
 }
 .bg {
-	&__container {
-		background-image: linear-gradient(to bottom, $main-bg, white);
-		@include tablet {
-			background-image: linear-gradient(to bottom, $main-bg, white);
-		}
-		&--card {
-			@include tablet {
-				margin: 20px 40px 20px 30px;
-			}
-		}
-		&--design {
-      margin: 0 20px;
+  &__container {
+    background-image: linear-gradient(to bottom, $main-bg, white);
+    @include tablet {
+      background-image: linear-gradient(to bottom, $main-bg, white);
+    }
+    &--card {
       @include tablet {
-        margin: 0 0 0 40px;
+        margin: 20px 40px 20px 30px;
       }
-		}
-	}
+    }
+    &--design {
+      margin: 0 rem(20);
+      @include tablet {
+        width: 40%;
+        margin: rem(20) 0 0 rem(40);
+      }
+    }
+  }
 }
 .wrapper {
-	margin: 0 rem(20);
-	@include tablet {
-		//width: 330px;
-		margin: 0 rem(40);
-	}
-	@include desktop {
-		margin: 0 auto;
-		max-width: 944px;
-	}
+  margin: 0 rem(20);
+  @include tablet {
+    margin: 0 rem(40);
+  }
+  @include desktop {
+    margin: 0 auto;
+    max-width: 944px;
+  }
+}
+.collapsed {
+  & .article__icon--collapsible {
+    transform: rotate(180deg);
+  }
+  & .collapsable__container {
+    display: none;
+  }
 }

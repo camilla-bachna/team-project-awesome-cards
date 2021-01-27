@@ -11,14 +11,14 @@
     $gradient-2 100%
   );
   @include tablet {
-    width: 500px;
+    width: 450px;
     height: 100%;
     border-radius: rem(6);
     margin-bottom: 0;
   }
- /* @include desktop {
-    width: 60%;
-  }*/
+ @include desktop {
+    width: 550px;
+  }
   &__container {
     display: flex;
     flex-direction: column;

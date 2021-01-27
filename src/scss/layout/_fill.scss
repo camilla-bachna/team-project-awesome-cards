@@ -1,56 +1,54 @@
 .form {
-  @include openRegular;
-  margin: rem(25) 0 rem(10);
-  padding-bottom: rem(10);
-  border-bottom: 1px $placeholder-text solid;
-  &__label {
-    display: block;
-    color: $main-text;
-    margin-bottom: rem(7);
-    @include sizeLine(rem(14), rem(20));
-    &--bt {
-      display: inline-block;
-      width: rem(140);
-      height: rem(30);
-      color: white;
-      background-color: $icons;
-      border: none;
-      border-radius: rem(3);
-      box-shadow: 0 0 rem(5) $shadow;
-      margin-bottom: rem(20);
-      @include sizeLine(rem(14), rem(20));
-      cursor: pointer;
-      &:hover {
-        background-color: $bt;
-      }
-    }
-  }
-  &__input {
-    width: 100%;
-    height: rem(30);
-    border: rem(1) $border solid;
-    padding: rem(3) 0 rem(7) rem(9);
-    margin-bottom: rem(20);
-    &::placeholder {
-      @include openRegular {
-        @include sizeLine(rem(14), rem(20));
-        color: $placeholder-text;
-      }
-    }
-  }
-  &__img--container {
-    display: inline-block;
-    width: rem(30);
-    height: rem(30);
-    border: rem(1) $border solid;
-    margin-left: rem(20);
-  }
+	@include openRegular;
+	border-bottom: 1px $placeholder-text solid;
+	&__label {
+		display: block;
+		color: $main-text;
+		margin-bottom: rem(7);
+		@include sizeLine(rem(14), rem(20));
+		&--bt {
+			display: inline-block;
+			width: rem(140);
+			height: rem(30);
+			color: white;
+			background-color: $icons;
+			border: none;
+			border-radius: rem(3);
+			box-shadow: 0 0 rem(5) $shadow;
+			margin-bottom: rem(20);
+			@include sizeLine(rem(14), rem(20));
+			cursor: pointer;
+			&:hover {
+				background-color: $bt;
+			}
+		}
+	}
+	&__input {
+		width: 100%;
+		height: rem(30);
+		border: rem(1) $border solid;
+		padding: rem(3) 0 rem(7) rem(9);
+		margin-bottom: rem(20);
+		&::placeholder {
+			@include openRegular {
+				@include sizeLine(rem(14), rem(20));
+				color: $placeholder-text;
+			}
+		}
+	}
+	&__img--container {
+		display: inline-block;
+		width: rem(30);
+		height: rem(30);
+		border: rem(1) $border solid;
+		margin-left: rem(20);
+	}
 }
 
 .form__label-div {
-  display: flex;
+	display: flex;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }

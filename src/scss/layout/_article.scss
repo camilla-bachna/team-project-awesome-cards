@@ -1,35 +1,35 @@
 .article {
-    border-bottom: 1px $placeholder-text solid ; // ¿este border tiene que desaparecer cuando se despliega?
-    margin-bottom: rem(10);
+  border-bottom: 1px $placeholder-text solid; // ¿este border tiene que desaparecer cuando se despliega?
+  margin-top: rem(10);
+  padding-bottom: rem(7);
+  cursor: pointer;
+  &__container {
+    display: flex;
+    @include tablet {
+    }
+    &--arrows {
+      @include tablet {
+      }
+    }
+  }
+  &__icon {
+    margin-right: rem(10);
+    color: $icons;
+    @include sizeLine(rem(18), rem(18));
+    &--collapsible {
+      color: $secondary-text;
+      @include sizeLine(rem(18), rem(18));
+    }
+  }
+  &__title {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &__container {
-        display: flex;
-        @include tablet {
-            margin-top: rem(27);
-        }
-        &--arrows {
-            @include tablet {
-                margin-top: rem(20);                
-            }
-        }
+    @include openSemiBold {
+      font-size: rem(18);
+      color: $secondary-text;
+      text-transform: uppercase;
     }
-    &__icon {
-        color: $icons;
-        @include sizeLine(rem(18), rem(26));
-        margin-right: rem(10);
-        &--collapsible {
-            color: $secondary-text;
-            @include sizeLine(rem(18), rem(18));
-        }
-    }
-    &__title {
-        padding-bottom: rem(10);
-        @include openSemiBold {
-            font-size: rem(18);
-            color: $secondary-text;
-            text-transform: uppercase;
-        }
-    }
+  }
 }
