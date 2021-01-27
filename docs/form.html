@@ -46,18 +46,17 @@
 				</div>
 				<div class="bg__container--design">
 					<div class="main__pageContainer">
-						<section>
+						<section class="js-collapsable">
 						<article class="article">
-							<h2 class="article__title">
-								<span class="article__container--arrows article__icon far fa-object-ungroup"></span>
-								Diseña
-								<span class="fas fa-chevron-down article__icon--collapsible"></span>
-								<span class="fas fa-chevron-up article__icon--collapsible hidden"></span>
-							</h2>	
+							<h2 class="article__title collapsable__header">
+								<span class="article__icon far fa-object-ungroup"></span>
+								<span class="article__title">Diseña</span>		
+								<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
+							</h2>
 						</article>
 
 
-						<div class="design">
+						<div class="design collapsable__container">
 						    <h2 class="design__title">Colores</h2>
 
 						    <div class="design__colorcontainer">
@@ -90,18 +89,17 @@
 						    </div>
 						</div>
 						</section>
-						<section>
+						<section class="js-collapsable">
 						<article class="article">
-							<h2 class="article__title">
-								<span class="article__container--arrows article__icon far fa-keyboard"></span>
-								Rellena
-								<span class="fas fa-chevron-down article__icon--collapsible"></span>
-								<span class="fas fa-chevron-up article__icon--collapsible hidden"></span>
-							</h2>	
+							<h2 class="article__title collapsable__header">
+								<span class="article__icon far fa-keyboard"></span>
+								<span class="article__title">Rellena</span>		
+								<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
+							</h2>
 						</article>
 
 
-						<form action="/signup" class="form" method="POST">
+						<form action="/signup" class="form  collapsable__container" method="POST">
 							<label for="name" class="form__label">Nombre completo</label>
 							<input id="name" name="name" type="text" class="form__input js-name" placeholder="Ej: Sally Jill" required />
 
@@ -129,18 +127,17 @@
 							<input id="github" name="github" type="text" class="form__input js-github" placeholder="Ej: github.com/sally-hill" required />
 						</form>
 						</section>
-						<section>
+						<section class="js-collapsable">
 						<article class="article">
-							<h2 class="article__title">
-								<span class="article__container--arrows article__icon fas fa-share-alt"></span>
-								Comparte
-								<span class="fas fa-chevron-down article__icon--collapsible"></span>
-								<span class="fas fa-chevron-up article__icon--collapsible hidden"></span>
-							</h2>	
+							<h2 class="article__title collapsable__header">
+								<span class="article__icon fas fa-share-alt"></span>
+								<span class="article__title">Comparte</span>		
+								<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
+							</h2>
 						</article>
 
 
-						<div class="share">
+						<div class="share collapsable__container">
 						    <button type="button" class="share__button">
 						        <i class="far fa-id-card"></i><span class="share__button--text"> Crear tarjeta </span>
 						    </button>
