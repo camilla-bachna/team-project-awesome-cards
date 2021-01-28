@@ -7,7 +7,6 @@
 		margin-bottom: rem(7);
 		@include sizeLine(rem(14), rem(20));
 		&--bt {
-			display: inline-block;
 			width: rem(140);
 			height: rem(30);
 			color: white;
@@ -16,7 +15,7 @@
 			border-radius: rem(3);
 			box-shadow: 0 0 rem(5) $shadow;
 			margin-bottom: rem(20);
-			@include sizeLine(rem(14), rem(20));
+			font-size: rem(14);
 			cursor: pointer;
 			&:hover {
 				background-color: $bt;
@@ -24,6 +23,7 @@
 		}
 	}
 	&__input {
+		font-family: $font-text;
 		width: 100%;
 		height: rem(30);
 		border: rem(1) $border solid;
@@ -36,8 +36,7 @@
 			}
 		}
 	}
-	&__img--container {
-		display: inline-block;
+	&__img--container {		
 		width: rem(30);
 		height: rem(30);
 		border: rem(1) $border solid;
@@ -48,7 +47,12 @@
 .form__label-div {
 	display: flex;
 }
-
 .hidden {
 	display: none;
+}
+.fieldset {
+	border: none;
+}
+.data {
+	margin-top: rem(25);
 }
