@@ -1,12 +1,27 @@
 'use strict';
-const sectionElement = document.querySelector('.js-collapsable');
+/*const sectionElement = document.querySelector('.js-collapsable');
 const headerElement = document.querySelector('.collapsable__header');
-// const containerElement = document.querySelector('.collapsable__container');
+const containerElement = document.querySelector('.collapsable__container');
 
 function collapsableHandler () {
   sectionElement.classList.toggle('collapsed');
-  // headerElement.classList.toggle('collapsable__header--arrow');
-  // containerElement.classList.toggle('collapsable__container');
+  headerElement.classList.toggle('collapsable__header--arrow');
+  containerElement.classList.toggle('collapsable__container');
 }
 
-headerElement.addEventListener ('click', collapsableHandler);
+headerElement.addEventListener ('click', collapsableHandler);*/
+
+/*'use strict';
+const sectionElements = document.querySelectorAll('.js-collapsable');
+const headerElement = document.querySelector('.collapsable__header');
+
+console.log(sectionElements);
+
+function collapsableHandler (ev) {
+  let sectionElement = ev.currentTarget.querySelector('.collapsable__header');
+  sectionElements.classList.toggle('collapsed');
+}
+
+for (sectionElement of sectionElements) {
+  headerElement.addEventListener ('click', collapsableHandler);
+}*/
