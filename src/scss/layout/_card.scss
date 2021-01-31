@@ -53,29 +53,33 @@
     background-color: white;
     box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2),
       0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
-    & .name {
-      display: inline-block;
-      font-size: rem(18);
-      font-weight: 700;
-      color: $main-text;
-      border-left: rem(5) solid $border-text;
+    &--title {
+      border-left: rem(5) solid;
       padding-left: rem(15);
-      margin-top: rem(21);
+      border-color: $border-text;
     }
-    & .job {
-      font-size: rem(16);
-      font-weight: 400;
-      color: $secondary-text;
-      border-left: rem(5) solid $border-text;
-      padding-left: rem(15);
-      margin-bottom: rem(8);
+    &.palette-1 .card__data--title {
+      border-left-color: $palette-1-2;
+      color: $palette-1-1;
     }
+
+    &.palette-2 .card__data--title {
+      border-left-color: $palette-2-2;
+      color: $palette-2-1;
+    }
+
+    &.palette-3 .card__data--title {
+      border-left-color: $palette-3-2;
+      color: $palette-3-1;
+    }
+
     &--list {
       list-style-type: none;
       display: flex;
       margin: rem(10) rem(20) rem(12);
       .circle {
-        border: rem(2) solid $border;
+        border: rem(2) solid;
+        // border-color: $border;
         border-radius: 50%;
         height: rem(32);
         width: rem(32);
@@ -85,12 +89,47 @@
         margin-right: rem(10);
       }
     }
+    &.palette-1 .card__data--list .circle {
+      border-color: $palette-1-3;
+    }
+
+    &.palette-2 .card__data--list .circle {
+      border-color: $palette-2-3;
+    }
+
+    &.palette-3 .card__data--list .circle {
+      border-color: $palette-3-3;
+    }
     &--icon {
       color: $main-text;
       padding: rem(3) rem(5);
+    }
+    &.palette-1 .card__data--icon {
+      color: $palette-1-1;
+    }
+
+    &.palette-2 .card__data--icon {
+      color: $palette-2-1;
+    }
+
+    &.palette-3 .card__data--icon {
+      color: $palette-3-1;
     }
   }
   .fa-trash-alt {
     padding: 0 rem(6) 0 rem(10);
   }
+}
+.name {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: 700;
+  color: $main-text;
+  margin-top: rem(21);
+}
+.job {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $secondary-text;
+  margin-bottom: rem(8);
 }
