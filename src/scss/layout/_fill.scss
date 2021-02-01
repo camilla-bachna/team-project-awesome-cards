@@ -1,6 +1,5 @@
 .form {
-	@include openRegular;
-	border-bottom: 1px $placeholder-text solid;
+	@include openRegular;	
 	&__label {
 		display: block;
 		color: $main-text;
@@ -41,6 +40,10 @@
 		height: rem(30);
 		border: rem(1) $border solid;
 		margin-left: rem(20);
+	}
+	&--required {
+		color: $icons;
+		font-weight: bold;
 	}
 }
 
