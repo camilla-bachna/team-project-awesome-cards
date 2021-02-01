@@ -1,5 +1,57 @@
 'use strict';
 
+/*const inputsTextConfig = [
+  {
+    inputClass: '.js-input-name',
+    cardClass: '.js-card-name',
+    defaultValue: 'Nombre apellidos',
+    cardPrefix: '',
+    cardElementAttribute: 'innerHTML'
+  },
+  {
+    inputClass: '.js-input-job',
+    cardClass: '.js-card-job',
+    defaultValue: 'Programadora front end',
+    cardPrefix: '',
+    cardElementAttribute: 'innerHTML'
+  },
+  {
+    inputClass: '.js-input-email',
+    cardClass: '.js-card-email',
+    defaultValue: '',
+    cardPrefix: '',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-phone',
+    cardClass: '.js-card-phone',
+    defaultValue: '',
+    cardPrefix: '',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-linkedin',
+    cardClass: '.js-card-linkedin',
+    defaultValue: '',
+    cardPrefix: 'https://www.linkedin.com/in/',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-github',
+    cardClass: '.js-card-github',
+    defaultValue: '',
+    cardPrefix: 'https://www.github.com/',
+    cardElementAttribute: 'href'
+  }
+];*/
+
+// clear all inputs
+/*const reset = function () {
+  numberAElement.value = '';
+  numberBElement.value = '';
+  resultElement.innerHTML = '';
+};*/
+
 // Name
 
 const nameElement = document.querySelector('.js-name');
@@ -101,3 +153,5 @@ function githubHandler () {
 
 
 githubElement.addEventListener('keyup', githubHandler);
+
+
