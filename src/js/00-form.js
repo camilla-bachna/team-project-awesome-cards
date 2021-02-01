@@ -49,7 +49,7 @@ const inputsTextConfig = [
 function updateAllInputs() {
   // recorro los 6 inputs del array inputsTextConfig
   for (const inputTextConfig of inputsTextConfig) {
-  // obtengo el elemento input del formulario
+    // obtengo el elemento input del formulario
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     // obtengo el elemento del preview
     const cardElement = document.querySelector(inputTextConfig.cardClass);
@@ -86,15 +86,15 @@ function updateAllInputs() {
       // actualizo la tarjeta
       cardElement.href = newValue;
     }
-
   }
-  const inputTextElements = document.querySelectorAll('.js-input-text');
-  // escucho a cada uno de ellos con un addEventListener
-  for (const inputTextElement of inputTextElements) {
-    inputTextElement.addEventListener('keyup', updateAllInputs);
-  }
-
 }
+const inputTextElements = document.querySelectorAll('.js-input-text');
+// escucho a cada uno de ellos con un addEventListener
+for (const inputTextElement of inputTextElements) {
+  inputTextElement.addEventListener('keyup', updateAllInputs);
+}
+
+
 
 updateAllInputs();
 

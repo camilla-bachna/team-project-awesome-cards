@@ -11,8 +11,8 @@
     $gradient-2 100%
   );
   @include tablet {
-    width: 450px;
-    height: 100%;
+    width: rem(450);
+    min-height: 80vh;
     border-radius: rem(6);
     margin-bottom: 0;
   }
@@ -23,10 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: rem(38) 0 rem(40);
-    @include tablet {
-      margin-top: rem(173);
-    }
+    margin: 0 0 rem(40);
   }
   &__reset {
     @include openRegular {
