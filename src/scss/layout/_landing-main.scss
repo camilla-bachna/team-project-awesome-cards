@@ -18,12 +18,10 @@
   }
   &__img {
     margin-top: 16.5vh;
-    height: rem(63);
     width: rem(250);
     @include tablet {
       margin-top: 27vh;
-      height: rem(105);
-      width: rem(419);
+      width: rem(350);
     }
   }
   &__title {
