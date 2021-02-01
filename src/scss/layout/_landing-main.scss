@@ -3,12 +3,9 @@
   background-color: $main-bg;
   display: grid;
   grid-template-rows: 1fr auto;
+  height: 100vh;
   &__main {
     grid-row: 1;
-    height: 84vh;
-    @include tablet {
-      height: 91vh;
-    }
   }
   &__container {
     display: flex;
