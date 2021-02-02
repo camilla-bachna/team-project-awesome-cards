@@ -15,6 +15,13 @@ const inputsTextConfig = [
     cardPrefix: '',
     cardElementAttribute: 'innerHTML'
   },
+  // {
+  //   inputClass: '.js-photo',
+  //   cardClass: '.js-preview-photo',
+  //   defaultValue: '',
+  //   cardPrefix: '',
+  //   cardElementAttribute: 'innerHTML'
+  // },
   {
     inputClass: '.js-email',
     cardClass: '.js-preview-email',

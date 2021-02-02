@@ -55,11 +55,19 @@
       padding-left: rem(15);
       border-color: $border-text;
     }
+
     &.palette-1 .card__data--title {
       border-left-color: $palette-1-2;
       color: $palette-1-1;
     }
-
+    &--img {
+      display: block;
+      width: rem(240);
+      height: rem(200);
+      background-image: url("../images/cardPhoto.jpg");
+      background-size: cover;
+      background-position: center;
+    }
     &.palette-2 .card__data--title {
       border-left-color: $palette-2-2;
       color: $palette-2-1;
