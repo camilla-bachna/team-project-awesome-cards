@@ -1,103 +1,83 @@
 <section class="js-collapsable collapsed">
-  <include
-    src="./collapsable-header.html"
-    titleh2="Rellena el formulario con tus datos"
-    title="Rellena"
-    iconImg="far fa-keyboard"
-  ></include>
+	<include
+		src="./collapsable-header.html"
+		titleh2="Rellena el formulario con tus datos"
+		title="Rellena"
+		iconImg="far fa-keyboard"
+	></include>
 
-  <form action="/signup" class="form collapsable__container" method="POST">
-    <fieldset class="fieldset data">
-      <label for="name" class="form__label"
-        >Nombre completo <span class="form--required">*</span></label
-      >
-      <input
-        id="name"
-        name="name"
-        type="text"
-        class="form__input js-name js-input-text"
-        placeholder="Ej: Sally Jill"
-        required
-      />
+	<form action="/signup" class="form collapsable__container" method="POST">
+		<fieldset class="fieldset data">
+			<label for="name" class="form__label">Nombre completo <span class="form--required">*</span></label>
+			<input
+				id="name"
+				name="name"
+				type="text"
+				class="form__input js-name js-input-text"
+				placeholder="Ej: Sally Jill"
+				required
+			/>
 
-      <label for="job" class="form__label"
-        >Puesto <span class="form--required">*</span></label
-      >
-      <input
-        id="job"
-        name="job"
-        type="text"
-        class="form__input js-job js-input-text"
-        placeholder="Ej: Front-end unicorn"
-        required
-      />
-    </fieldset>
+			<label for="job" class="form__label">Puesto <span class="form--required">*</span></label>
+			<input
+				id="job"
+				name="job"
+				type="text"
+				class="form__input js-job js-input-text"
+				placeholder="Ej: Front-end unicorn"
+				required
+			/>
+		</fieldset>
 
-    <fieldset class="fieldset photo">
-      <label for="photo" class="form__label"
-        >Imagen de perfil <span class="form--required">*</span></label
-      >
-      <div class="form__label-div">
-        <button class="form__label--bt">Añadir imagen</button>
-        <input
-          id="photo"
-          name="photo"
-          type="file"
-          class="js__profile-upload-btn hidden"
-          required
-        />
-        <div class="form__img--container js__profile-preview"></div>
-      </div>
-    </fieldset>
+		<fieldset class="fieldset photo">
+			<label for="photo" class="form__label">Imagen de perfil <span class="form--required">*</span></label>
+			<div class="form__label-div">
+				<button class="form__label--bt js__profile-trigger">Añadir imagen</button>
+				<input id="photo" name="photo" type="file" class="js__profile-upload-btn hidden" required />
+				<div class="form__img--container js__profile-preview"></div>
+			</div>
+		</fieldset>
 
-    <fieldset class="fieldset social">
-      <label for="email" class="form__label"
-        >Email <span class="form--required">*</span></label
-      >
-      <input
-        id="email"
-        name="email"
-        type="email"
-        class="form__input js-email js-input-text"
-        placeholder="Ej: sally-hill@gmail.com"
-        required
-      />
+		<fieldset class="fieldset social">
+			<label for="email" class="form__label">Email <span class="form--required">*</span></label>
+			<input
+				id="email"
+				name="email"
+				type="email"
+				class="form__input js-email js-input-text"
+				placeholder="Ej: sally-hill@gmail.com"
+				required
+			/>
 
-      <label for="phone" class="form__label">Teléfono</label>
-      <input
-        id="phone"
-        name="phone"
-        type="tel"
-        class="form__input js-phone js-input-text"
-        placeholder="Ej: 555-55-55-55"
-      />
+			<label for="phone" class="form__label">Teléfono</label>
+			<input
+				id="phone"
+				name="phone"
+				type="tel"
+				class="form__input js-phone js-input-text"
+				placeholder="Ej: 555-55-55-55"
+			/>
 
-      <label for="linkedin" class="form__label"
-        >Linkedin <span class="form--required">*</span></label
-      >
-      <input
-        id="linkedin"
-        name="linkedin"
-        type="text"
-        class="form__input js-linkedin js-input-text"
-        placeholder="Ej: linkedin.com/in/sally.hill"
-        required
-      />
+			<label for="linkedin" class="form__label">Linkedin <span class="form--required">*</span></label>
+			<input
+				id="linkedin"
+				name="linkedin"
+				type="text"
+				class="form__input js-linkedin js-input-text"
+				placeholder="Ej: linkedin.com/in/sally.hill"
+				required
+			/>
 
-      <label for="github" class="form__label"
-        >GitHub <span class="form--required">*</span></label
-      >
-      <input
-        id="github"
-        name="github"
-        type="text"
-        class="form__input js-github js-input-text"
-        placeholder="Ej: github.com/sally-hill"
-        required
-      />
-      <label for="required-fields" class="form__label"
-        ><span class="form--required">*</span> Campos obligatorios</label
-      >
-    </fieldset>
-  </form>
+			<label for="github" class="form__label">GitHub <span class="form--required">*</span></label>
+			<input
+				id="github"
+				name="github"
+				type="text"
+				class="form__input js-github js-input-text"
+				placeholder="Ej: github.com/sally-hill"
+				required
+			/>
+			<label for="required-fields" class="form__label"><span class="form--required">*</span> Campos obligatorios</label>
+		</fieldset>
+	</form>
 </section>
