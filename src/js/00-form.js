@@ -86,15 +86,15 @@ function updateAllInputs() {
       // actualizo la tarjeta
       cardElement.href = newValue;
     }
-
   }
-  const inputTextElements = document.querySelectorAll('.js-input-text');
-  // escucho a cada uno de ellos con un addEventListener
-  for (const inputTextElement of inputTextElements) {
-    inputTextElement.addEventListener('keyup', updateAllInputs);
-  }
-
 }
+const inputTextElements = document.querySelectorAll('.js-input-text');
+// escucho a cada uno de ellos con un addEventListener
+for (const inputTextElement of inputTextElements) {
+  inputTextElement.addEventListener('keyup', updateAllInputs);
+}
+
+
 
 updateAllInputs();
 
@@ -112,6 +112,8 @@ function resetAll() {
 }
 
 buttonElement.addEventListener ('click', resetAll);
+
+
 
 // Name
 
