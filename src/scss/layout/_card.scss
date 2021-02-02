@@ -13,6 +13,7 @@
   @include tablet {
     width: rem(450);
     min-height: 80vh;
+    height: 100vh;
     border-radius: rem(6);
     margin-bottom: 0;
   }

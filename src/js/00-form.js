@@ -98,20 +98,29 @@ for (const inputTextElement of inputTextElements) {
 
 updateAllInputs();
 
-// clear all inputs
-const buttonElement = document.querySelector('.js-reset');
 
-function resetAll() {
-//ESTO ESTA MAL HECHO
-  for (const inputTextConfig of inputsTextConfig) {
-    const inputElement = document.querySelector(inputTextConfig.inputClass);
-    const cardElement = document.querySelector(inputTextConfig.cardClass);
-    inputElement.value = '';
-    cardElement.value = '';
+// clear all inputs
+//inicializamos el botón reset y llamamlos a los input de la preview card
+const buttonElement = document.querySelector('.js-reset');
+const previewTextElements = document.querySelectorAll('.js-preview-text');
+
+//añadimos el evento al boton
+buttonElement.addEventListener ('click', resetPreview);
+
+// creamos la funcion reset para borrar todos los preview
+function resetPreview() {
+  // console.log('me quieren borrar');
+  for (const previewElement of previewTextElements) {
+    //reseteamos los innerHTML
+    previewElement.value = '';
+
+    //reseteramos los href
+    previewElement.href = '#';
   }
+
 }
 
-buttonElement.addEventListener ('click', resetAll);
+
 
 // Name
 
