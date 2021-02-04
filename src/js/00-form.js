@@ -6,50 +6,49 @@ const inputsTextConfig = [
     cardClass: '.js-preview-name',
     defaultValue: 'Nombre apellidos',
     cardPrefix: '',
-    cardElementAttribute: 'innerHTML'
+    cardElementAttribute: 'innerHTML',
   },
   {
     inputClass: '.js-job',
     cardClass: '.js-preview-job',
     defaultValue: 'Programadora front end',
     cardPrefix: '',
-    cardElementAttribute: 'innerHTML'
+    cardElementAttribute: 'innerHTML',
   },
   {
     inputClass: '.js-email',
     cardClass: '.js-preview-email',
     defaultValue: '',
     cardPrefix: 'mailto:',
-    cardElementAttribute: 'href'
+    cardElementAttribute: 'href',
   },
   {
     inputClass: '.js-phone',
     cardClass: '.js-preview-phone',
     defaultValue: '',
     cardPrefix: '',
-    cardElementAttribute: 'href'
+    cardElementAttribute: 'href',
   },
   {
     inputClass: '.js-linkedin',
     cardClass: '.js-preview-linkedin',
     defaultValue: '',
     cardPrefix: 'https://www.linkedin.com/in/',
-    cardElementAttribute: 'href'
+    cardElementAttribute: 'href',
   },
   {
     inputClass: '.js-github',
     cardClass: '.js-preview-github',
     defaultValue: '',
     cardPrefix: 'https://www.github.com/',
-    cardElementAttribute: 'href'
-  }
+    cardElementAttribute: 'href',
+  },
 ];
-
 
 function updateAllInputs() {
   // recorro los 6 inputs del array inputsTextConfig
   for (const inputTextConfig of inputsTextConfig) {
-  // obtengo el elemento input del formulario
+    // obtengo el elemento input del formulario
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     // obtengo el elemento del preview
     const cardElement = document.querySelector(inputTextConfig.cardClass);
@@ -87,6 +86,7 @@ function updateAllInputs() {
       cardElement.href = newValue;
     }
   }
+  //saveInLocalStorage();
 }
 const inputTextElements = document.querySelectorAll('.js-input-text');
 // escucho a cada uno de ellos con un addEventListener
@@ -94,15 +94,13 @@ for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener('keyup', updateAllInputs);
 }
 
-
-
 updateAllInputs();
 
 // clear all inputs
 const buttonElement = document.querySelector('.js-reset');
 
 function resetAll() {
-//ESTO ESTA MAL HECHO
+  //ESTO ESTA MAL HECHO
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     const cardElement = document.querySelector(inputTextConfig.cardClass);
@@ -132,4 +130,3 @@ buttonElement.addEventListener('click', resetAll);
 // }
 
 // }
-
