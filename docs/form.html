@@ -18,7 +18,7 @@
 		<header class="header">
 		  <div class="header__wrapper">
 		    <a href="./index.html" class="header__link" title="Volver a la portada">
-		      <img class="header__img" src="./assets/images/title.svg" alt="Awesome profile-cards" />
+		      <img class="header__img" src="./assets/images/title-creatures.svg" alt="Awesome profile-cards" />
 		    </a>
 		  </div>
 		</header>
@@ -27,20 +27,34 @@
 			<main class="main--flex">
 				<div class="bg__container--card">
 					<section class="card">
-					    <div class="card__container wrapper">
-					        <button class="card__reset" type="reset"><i class="far fa-trash-alt"></i> Reset</button>
-					        <article class="card__data js-card">
-					            <h2 class="card__data--title name js-preview-name">Nombre Apellido</h2>
-					            <h3 class="card__data--title job js-preview-job">Front-end developer</h3>
-					            <img src="./assets/images/cardPhoto.jpg" class="photo" alt="">
-					            <ul class="card__data--list">
-					                <li class="circle"><a href="555 333 222" class="card__data--icon phone js-preview-phone"><i class="fas fa-mobile-alt"></i></a></li>
-					                <li class="circle"><a href="mailto:username@example.com" class="card__data--icon email js-preview-email" target="_blank"><i class="fas fa-envelope"></i></a></li>
-					                <li class="circle"><a href="www.myLinkedIn.com" class="card__data--icon linkedin js-preview-linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-					                <li class="circle"><a href="www.myGitHub.com" class="card__data--icon github js-preview-github" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-					            </ul>
-					        </article>
-					    </div>
+						<div class="card__container wrapper">
+							<button class="card__reset js-reset" type="reset"><i class="far fa-trash-alt"></i> Reset</button>
+							<article class="card__data js-card">
+								<h2 class="card__data--title name js-preview-name">Nombre Apellido</h2>
+								<h3 class="card__data--title job js-preview-job">Front-end developer</h3>
+								<div class="card__data--img js__profile-image js-preview-photo"></div>
+								<ul class="card__data--list">
+									<li class="circle">
+										<a href="555 333 222" class="card__data--icon phone js-preview-phone"><i class="fas fa-mobile-alt"></i></a>
+									</li>
+									<li class="circle">
+										<a href="mailto:username@example.com" class="card__data--icon email js-preview-email" target="_blank"
+											><i class="fas fa-envelope"></i
+										></a>
+									</li>
+									<li class="circle">
+										<a href="www.myLinkedIn.com" class="card__data--icon linkedin js-preview-linkedin" target="_blank"
+											><i class="fab fa-linkedin-in"></i
+										></a>
+									</li>
+									<li class="circle">
+										<a href="www.myGitHub.com" class="card__data--icon github js-preview-github" target="_blank"
+											><i class="fab fa-github-alt"></i
+										></a>
+									</li>
+								</ul>
+							</article>
+						</div>
 					</section>
 
 				</div>
@@ -87,97 +101,120 @@
 						    </div>
 						</div>
 						</section>
-						<section class="js-collapsable">
-							<h2 class="article article__title collapsable__header" title="Rellena el formulario con tus datos">
-								<span class="article__icon far fa-keyboard"></span>
-								<span class="article__title">Rellena</span>
-								<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
-							</h2>
+						<section class="js-collapsable collapsed">
+						  <h2 class="article article__title collapsable__header" title="Rellena el formulario con tus datos">
+  							<span class="article__icon far fa-keyboard"></span>
+  							<span class="article__title">Rellena</span>
+  							<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
+  						</h2>
 
 
-							<form action="/signup" class="form collapsable__container" method="POST">
-								<fieldset class="fieldset data">
-									<label for="name" class="form__label">Nombre completo</label>
-									<input id="name" name="name" type="text" class="form__input js-name" placeholder="Ej: Sally Jill" required />
+						  <form action="/signup" class="form collapsable__container js-form" method="POST">
+						    <fieldset class="fieldset data">
+						      <label for="name" class="form__label">Nombre completo <span class="form--required">*</span></label>
+						      <input
+						        id="name"
+						        name="name"
+						        type="text"
+						        class="form__input js-name js-input-text"
+						        placeholder="Ej: Sally Jill"
+						        required
+						      />
 
-									<label for="job" class="form__label">Puesto</label>
-									<input id="job" name="job" type="text" class="form__input js-job" placeholder="Ej: Front-end unicorn" required />
-								</fieldset>
-								
-								<fieldset class="fieldset photo">
-									<label for="photo" class="form__label">Imagen de perfil</label>
-									<div class="form__label-div">
-										<button class="form__label--bt">Añadir imagen</button>
-										<input id="photo" name="photo" type="file" class="js__profile-upload-btn hidden" />
-										<div class="form__img--container js__profile-preview"></div>
-									</div>
-								</fieldset>
+						      <label for="job" class="form__label">Puesto <span class="form--required">*</span></label>
+						      <input
+						        id="job"
+						        name="job"
+						        type="text"
+						        class="form__input js-job js-input-text"
+						        placeholder="Ej: Front-end unicorn"
+						        required
+						      />
+						    </fieldset>
 
-								<fieldset class="fieldset social">
-									<label for="email" class="form__label">Email</label>
-									<input
-										id="email"
-										name="email"
-										type="email"
-										class="form__input js-email"
-										placeholder="Ej: sally-hill@gmail.com"
-										required
-									/>
+						    <fieldset class="fieldset">
+						      <label for="photo" class="form__label">Imagen de perfil <span class="form--required">*</span></label>
+						      <div class="form__label-div">
+						        <button class="form__label--bt js__profile-trigger">Añadir imagen</button>
+						        <input id="photo" name="photo" type="file" class="js__profile-upload-btn hidden js-input-text" />
+						        <div class="form__img--container js__profile-preview js-photo"></div>
+						      </div>
+						    </fieldset>
 
-									<label for="phone" class="form__label">Teléfono</label>
-									<input id="phone" name="phone" type="tel" class="form__input js-phone" placeholder="Ej: 555-55-55-55" />
+						    <fieldset class="fieldset social">
+						      <label for="email" class="form__label">Email <span class="form--required">*</span></label>
+						      <input
+						        id="email"
+						        name="email"
+						        type="email"
+						        class="form__input js-email js-input-text"
+						        placeholder="Ej: sally-hill@gmail.com"
+						        required
+						      />
 
-									<label for="linkedin" class="form__label">Linkedin</label>
-									<input
-										id="linkedin"
-										name="linkedin"
-										type="text"
-										class="form__input js-linkedin"
-										placeholder="Ej: linkedin.com/in/sally.hill"
-										required
-									/>
+						      <label for="phone" class="form__label">Teléfono</label>
+						      <input
+						        id="phone"
+						        name="phone"
+						        type="tel"
+						        class="form__input js-phone js-input-text"
+						        placeholder="Ej: 555-55-55-55"
+						      />
 
-									<label for="github" class="form__label">GitHub</label>
-									<input
-										id="github"
-										name="github"
-										type="text"
-										class="form__input js-github"
-										placeholder="Ej: github.com/sally-hill"
-										required
-									/>
-								</fieldset>
-							</form>
+						      <label for="linkedin" class="form__label">Linkedin <span class="form--required">*</span></label>
+						      <input
+						        id="linkedin"
+						        name="linkedin"
+						        type="text"
+						        class="form__input js-linkedin js-input-text"
+						        placeholder="Ej: linkedin.com/in/sally.hill"
+						        required
+						      />
+
+						      <label for="github" class="form__label">GitHub <span class="form--required">*</span></label>
+						      <input
+						        id="github"
+						        name="github"
+						        type="text"
+						        class="form__input js-github js-input-text"
+						        placeholder="Ej: github.com/sally-hill"
+						        required
+						      />
+						      <label for="required-fields" class="form__label"><span class="form--required">*</span> Campos obligatorios</label>
+						    </fieldset>
+						  </form>
 						</section>
 
-						<section class="js-collapsable">
-						<h2 class="article article__title collapsable__header" title="">
-							<span class="article__icon fas fa-share-alt"></span>
-							<span class="article__title">Comparte</span>
-							<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
-						</h2>
+						<section class="js-collapsable collapsed">
+						  <h2 class="article article__title collapsable__header" title="">
+  							<span class="article__icon fas fa-share-alt"></span>
+  							<span class="article__title">Comparte</span>
+  							<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
+  						</h2>
 
 
-						<div class="share collapsable__container">
+						  <div class="share collapsable__container">
 						    <button type="button" class="share__button">
-						        <i class="far fa-id-card"></i><span class="share__button--text"> Crear tarjeta </span>
+						      <i class="far fa-id-card"></i
+						      ><span class="share__button--text"> Crear tarjeta </span>
 						    </button>
-						</div>
+						  </div>
 						</section>
-						<div class="shareclick">
-						    <button type="buttoncliclk" class="shareclick__button">
-						        <i class="far fa-id-card"></i><span class="shareclick__button--text"> Crear tarjeta </span>
-						    </button>
 
-						    <div class="shareclick__line"></div>
-						    <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
-						    <p class="shareclick__text">https://awesome-profile-card.com?id=A456DF0001</p>
+						<!-- <div class="shareclick">
+     <button type="button" class="shareclick__button">
+         <i class="far fa-id-card"></i><span class="shareclick__button--text"> Crear tarjeta </span>
+     </button>
 
-						    <button type="buttonclick" class="shareclick__twitter">
-						        <i class="fab fa-twitter"></i><span class="shareclick__twitter--text"> Compartir en twitter </span>
-						    </button>
-						    <div class="shareclick__line"></div>
-						</div>
+     <div class="shareclick__line"></div>
+     <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
+     <p class="shareclick__text">https://awesome-profile-card.com?id=A456DF0001</p>
+
+     <button type="button" class="shareclick__twitter">
+         <i class="fab fa-twitter"></i><span class="shareclick__twitter--text"> Compartir en twitter </span>
+     </button>
+     <div class="shareclick__line"></div>
+ </div> -->
 					</div>
 				</div>
 			</main>
