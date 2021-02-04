@@ -1,114 +1,114 @@
 .page {
-  width: 100%;
-  background-color: $main-bg;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  height: 100vh;
-  &__main {
-    grid-row: 1;
-  }
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  &__img {
-    margin-top: 16.5vh;
-    width: rem(250);
-    @include tablet {
-      margin-top: 27vh;
-      width: rem(350);
-    }
-  }
-  &__title {
-    width: rem(223);
-    height: rem(24);
-    color: $icons;
-    font-family: $font-title;
-    line-height: normal;
-    font-size: rem(19.2);
-    font-weight: 900;
-    margin-top: 6vh;
-    text-align: center;
-    @include tablet {
-      width: rem(278);
-      height: rem(31);
-      font-size: rem(24);
-      margin-top: 2.5vh;
-    }
-  }
-  &__text {
-    color: $main-text;
-    width: rem(264.8);
-    height: rem(38.4);
-    @include openRegular;
-    line-height: normal;
-    font-size: rem(12.8);
-    text-align: center;
-    @include tablet {
-      width: rem(331);
-      height: rem(48);
-      font-size: rem(16);
-    }
-  }
-  &__list {
-    border-radius: rem(4);
-    border: solid rem(1.6) rgba(225, 115, 52, 0.21);
-    width: rem(268);
-    height: rem(73);
-    margin: auto;
-    margin-top: 3vh;
-    margin-bottom: 7vh;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    @include tablet {
-      border-radius: rem(5);
-      margin-top: 2vh;
-      width: rem(325);
-      height: rem(86);
-      margin-bottom: 10vh;
-    }
-    &--item {
-      color: $secondary-text;
-      font-family: $font-text;
-      font-size: rem(12.8);
-      width: rem(60);
-      height: rem(48.8);
-      margin: rem(15);
-      text-align: center;
-      @include tablet {
-        font-size: rem(16);
-        width: rem(75);
-        height: rem(61);
-      }
-    }
-    &--icon {
-      color: $icons;
-      font-size: rem(22.4);
-      @include tablet {
-        font-size: rem(28);
-      }
-    }
-  }
-  &__link {
-    background-color: $bt;
-    color: white;
-    text-decoration: none;
-    @include openSemiBold;
-    font-size: rem(16);
-    text-transform: uppercase;
-    text-align: center;
-    width: rem(129);
-    height: rem(42);
-    margin: auto;
-    display: flex;
-    padding: rem(10) rem(20);
-    border-radius: rem(21);
-    margin-bottom: 4vh;
-    @include tablet {
-      margin-bottom: 2vh;
-    }
-  }
+	width: 100%;
+	background-color: $main-bg;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	height: 100vh;
+	&__main {
+		grid-row: 1;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img {
+		margin-top: 16.5vh;
+		width: rem(250);
+		@include tablet {
+			margin-top: 27vh;
+			width: rem(350);
+		}
+	}
+	&__title {
+		width: rem(223);
+		height: rem(24);
+		color: $icons;
+		font-family: $font-title;
+		line-height: normal;
+		font-size: rem(19.2);
+		font-weight: 900;
+		margin-top: 6vh;
+		text-align: center;
+		@include tablet {
+			width: rem(278);
+			height: rem(31);
+			font-size: rem(24);
+			margin-top: 2.5vh;
+		}
+	}
+	&__text {
+		color: $main-text;
+		width: rem(264.8);
+		height: rem(38.4);
+		@include openRegular;
+		line-height: normal;
+		font-size: rem(12.8);
+		text-align: center;
+		@include tablet {
+			width: rem(331);
+			height: rem(48);
+			font-size: rem(16);
+		}
+	}
+	&__list {
+		border-radius: rem(4);
+		border: solid rem(1.6) rgba(225, 115, 52, 0.21);
+		width: rem(268);
+		height: rem(73);
+		margin: auto;
+		margin-top: 3vh;
+		margin-bottom: 7vh;
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+		@include tablet {
+			border-radius: rem(5);
+			margin-top: 2vh;
+			width: rem(325);
+			height: rem(86);
+			margin-bottom: 10vh;
+		}
+		&--item {
+			color: $secondary-text;
+			font-family: $font-text;
+			font-size: rem(12.8);
+			width: rem(60);
+			height: rem(48.8);
+			margin: rem(15);
+			text-align: center;
+			@include tablet {
+				font-size: rem(16);
+				width: rem(75);
+				height: rem(61);
+			}
+		}
+		&--icon {
+			color: $icons;
+			font-size: rem(22.4);
+			@include tablet {
+				font-size: rem(28);
+			}
+		}
+	}
+	&__link {
+		background-color: $bt;
+		color: white;
+		text-decoration: none;
+		@include openSemiBold;
+		font-size: rem(16);
+		text-transform: uppercase;
+		text-align: center;
+		width: rem(129);
+		height: rem(42);
+		margin: auto;
+		display: flex;
+		padding: rem(10) rem(20);
+		border-radius: rem(21);
+		margin-bottom: 4vh;
+		@include tablet {
+			margin-bottom: 2vh;
+		}
+	}
 }

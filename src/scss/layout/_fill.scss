@@ -1,5 +1,5 @@
 .form {
-	@include openRegular;	
+	@include openRegular;
 	&__label {
 		display: block;
 		color: $main-text;
@@ -35,11 +35,14 @@
 			}
 		}
 	}
-	&__img--container {		
+	&__img--container {
 		width: rem(30);
 		height: rem(30);
 		border: rem(1) $border solid;
 		margin-left: rem(20);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	&--required {
 		color: $icons;

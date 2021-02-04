@@ -5,14 +5,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    $gradient-1 25%,
-    $gradient-2 100%
-  );
+  background-image: linear-gradient(to bottom, $gradient-1 25%, $gradient-2 100%);
   @include tablet {
     width: 450px;
-    height: 100%;
+    min-height: 80vh;
     border-radius: rem(6);
     margin-bottom: 0;
   }
@@ -24,9 +20,6 @@
     flex-direction: column;
     align-items: center;
     margin: rem(38) 0 rem(40);
-    @include tablet {
-      margin-top: rem(173);
-    }
   }
   &__reset {
     @include openRegular {
@@ -51,18 +44,25 @@
   &__data {
     width: rem(240);
     background-color: white;
-    box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2),
-      0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2), 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
     &--title {
       border-left: rem(5) solid;
       padding-left: rem(15);
       border-color: $border-text;
     }
+
     &.palette-1 .card__data--title {
       border-left-color: $palette-1-2;
       color: $palette-1-1;
     }
-
+    &--img {
+      display: block;
+      width: rem(240);
+      height: rem(200);
+      background-image: url('../images/cardPhoto.jpg');
+      background-size: cover;
+      background-position: center;
+    }
     &.palette-2 .card__data--title {
       border-left-color: $palette-2-2;
       color: $palette-2-1;
