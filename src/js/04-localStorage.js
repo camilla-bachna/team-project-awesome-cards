@@ -52,12 +52,12 @@ function getFromLocalStorage() {
   if (userDataInString !== null) {
     const userData = JSON.parse(userDataInString);
     // actualizo los inputs del formulario
-    document.querySelector('.js-preview-name').value = userData.name;
-    document.querySelector('.js-preview-job').value = userData.job;
-    document.querySelector('.js-preview-email').value = userData.email;
-    document.querySelector('.js-preview-phone').value = userData.phone;
-    document.querySelector('.js-preview-linkedin').value = userData.linkedin;
-    document.querySelector('.js-preview-github').value = userData.github;
+    document.querySelector('.js-name').value = userData.name;
+    document.querySelector('.js-job').value = userData.job;
+    document.querySelector('.js-email').value = userData.email;
+    document.querySelector('.js-phone').value = userData.phone;
+    document.querySelector('.js-linkedin').value = userData.linkedin;
+    document.querySelector('.js-github').value = userData.github;
     // actualizo la variable global de la foto
     // eslint-disable-next-line no-undef
     photo = userData.photo;

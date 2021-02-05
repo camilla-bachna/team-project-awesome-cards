@@ -42,8 +42,10 @@ function writeImage() {
 
 function updatePhoto() {
   const currentPhoto = photo;
-  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
-  profileImage.style.backgroundImage = `url(${currentPhoto})`;
+  if (currentPhoto !=='') {
+    profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+    profileImage.style.backgroundImage = `url(${currentPhoto})`;
+  } 
 }
 /**
  * Genera un click automático en nuesto campo de tipo "file"

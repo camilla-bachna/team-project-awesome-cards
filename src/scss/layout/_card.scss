@@ -5,7 +5,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: linear-gradient(to bottom, $gradient-1 25%, $gradient-2 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $gradient-1 25%,
+    $gradient-2 100%
+  );
   @include tablet {
     width: 450px;
     min-height: 80vh;
@@ -44,7 +48,8 @@
   &__data {
     width: rem(240);
     background-color: white;
-    box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2), 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2),
+      0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
     &--title {
       border-left: rem(5) solid;
       padding-left: rem(15);
@@ -59,7 +64,7 @@
       display: block;
       width: rem(240);
       height: rem(200);
-      background-image: url('../images/cardPhoto.jpg');
+      background-image: url("../images/cardPhoto.png");
       background-size: cover;
       background-position: center;
     }

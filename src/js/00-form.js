@@ -86,7 +86,7 @@ function updateAllInputs() {
       cardElement.href = newValue;
     }
   }
-  //saveInLocalStorage();
+  saveInLocalStorage();
 }
 const inputTextElements = document.querySelectorAll('.js-input-text');
 // escucho a cada uno de ellos con un addEventListener
@@ -94,7 +94,7 @@ for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener('keyup', updateAllInputs);
 }
 
-updateAllInputs();
+// updateAllInputs();
 
 // clear all inputs
 const buttonElement = document.querySelector('.js-reset');
