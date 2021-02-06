@@ -23,11 +23,8 @@ Recuperar del local storage:
 
 // cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
 
-// eslint-disable-next-line no-unused-vars
-function saveInLocalStorage() {
-  // obtengo los valores de todos los campos
-  const userData = {
-    // eslint-disable-next-line no-undef
+function getUserData() {
+  return {
     photo: photo,
     palette: parseInt(document.querySelector('.js-palette:checked').value),
     name: document.querySelector('.js-name').value,
@@ -37,6 +34,12 @@ function saveInLocalStorage() {
     linkedin: document.querySelector('.js-linkedin').value,
     github: document.querySelector('.js-github').value,
   };
+}
+
+// eslint-disable-next-line no-unused-vars
+function saveInLocalStorage() {
+  // obtengo los valores de todos los campos
+  const userData = getUserData();
   // lo convierto a string porque local storage solo admite strings
   const userDataInString = JSON.stringify(userData);
   // lo guardo en el local storage en el campo que me apetece
