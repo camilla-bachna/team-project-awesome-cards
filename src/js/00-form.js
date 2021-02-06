@@ -104,7 +104,7 @@ const buttonElement = document.querySelector('.js-reset');
 function resetAll() {
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
-    inputElement.value = inputTextConfig.defaultValue;
+    inputElement.value = inputTextConfig.cardPrefix;
   }
   // eslint-disable-next-line no-undef
   clearPhoto();
