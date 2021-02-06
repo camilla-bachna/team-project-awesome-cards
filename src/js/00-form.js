@@ -4,14 +4,14 @@ const inputsTextConfig = [
   {
     inputClass: '.js-name',
     cardClass: '.js-preview-name',
-    defaultValue: 'Nombre apellidos',
+    defaultValue: 'Mary Shelly',
     cardPrefix: '',
     cardElementAttribute: 'innerHTML',
   },
   {
     inputClass: '.js-job',
     cardClass: '.js-preview-job',
-    defaultValue: 'Programadora front end',
+    defaultValue: 'Master of creatures',
     cardPrefix: '',
     cardElementAttribute: 'innerHTML',
   },
@@ -104,11 +104,23 @@ const buttonElement = document.querySelector('.js-reset');
 function resetAll() {
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
-    inputElement.value = inputTextConfig.cardPrefix;
+    inputElement.value = inputTextConfig.defaultValue;
+    // if (inputTextConfig.defaultValue !== '' && ) {
+    //   inputTextConfig.defaultValue = '';
+    // } else {
+    //   inputElement.value = inputTextConfig.defaultValue;
+    // }
   }
   // eslint-disable-next-line no-undef
   clearPhoto();
   updateAllInputs();
+  clearInputs();
+}
+function clearInputs() {
+  const inputNameElement = document.querySelector('.js-name');
+  const inputJobElement = document.querySelector('.js-job');
+  inputJobElement.value = '';
+  inputNameElement.value = '';
 }
 
 buttonElement.addEventListener('click', resetAll);
