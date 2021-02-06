@@ -42,10 +42,16 @@ function writeImage() {
 
 function updatePhoto() {
   const currentPhoto = photo;
-  if (currentPhoto !=='') {
+  if (currentPhoto !== '') {
     profilePreview.style.backgroundImage = `url(${currentPhoto})`;
     profileImage.style.backgroundImage = `url(${currentPhoto})`;
-  } 
+  }
+}
+// eslint-disable-next-line no-unused-vars
+function clearPhoto() {
+  photo = '';
+  profilePreview.style.backgroundImage = '';
+  profileImage.style.backgroundImage = '';
 }
 /**
  * Genera un click automático en nuesto campo de tipo "file"

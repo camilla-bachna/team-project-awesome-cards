@@ -86,6 +86,7 @@ function updateAllInputs() {
       cardElement.href = newValue;
     }
   }
+  // eslint-disable-next-line no-undef
   saveInLocalStorage();
 }
 const inputTextElements = document.querySelectorAll('.js-input-text');
@@ -99,14 +100,15 @@ for (const inputTextElement of inputTextElements) {
 // clear all inputs
 const buttonElement = document.querySelector('.js-reset');
 
+// Reset
 function resetAll() {
-  //ESTO ESTA MAL HECHO
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
-    const cardElement = document.querySelector(inputTextConfig.cardClass);
-    inputElement.value = '';
-    cardElement.value = '';
+    inputElement.value = inputTextConfig.defaultValue;
   }
+  // eslint-disable-next-line no-undef
+  clearPhoto();
+  updateAllInputs();
 }
 
 buttonElement.addEventListener('click', resetAll);
