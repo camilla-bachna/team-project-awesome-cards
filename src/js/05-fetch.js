@@ -6,8 +6,8 @@ const cardResult = document.querySelector('.js-shareclick');
 function handleCreateBtn(ev) {
   ev.preventDefault();
 
-  const url =
-    'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
+  const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
+  // eslint-disable-next-line no-undef
   const data = getUserData();
 
   fetch(url, {
@@ -20,7 +20,7 @@ function handleCreateBtn(ev) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log('Server response:', data);
+      // console.log('Server response:', data);
       if (data.success === true) {
         cardResult.innerHTML = data.cardURL;
       } else {

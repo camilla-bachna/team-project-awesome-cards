@@ -1,9 +1,7 @@
 'use strict';
 
-// clear all inputs
 const buttonElement = document.querySelector('.js-reset');
 
-// Reset
 function resetAll() {
   // eslint-disable-next-line no-undef
   for (const inputTextConfig of inputsTextConfig) {

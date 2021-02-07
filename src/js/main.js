@@ -7,11 +7,8 @@ function preventSubmit(event) {
 }
 formElement.addEventListener('submit', preventSubmit);
 
-// recuperamos la info desde el local storage
 // eslint-disable-next-line no-undef
 getFromLocalStorage();
-
-// arrancamos la página
 
 // eslint-disable-next-line no-undef
 updateAllInputs();
