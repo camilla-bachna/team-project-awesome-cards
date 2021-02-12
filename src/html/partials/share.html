@@ -1,15 +1,21 @@
 <section class="js-collapsable collapsed">
-  <include
-    src="./collapsable-header.html"
-    title="Comparte"
-    iconImg="fas fa-share-alt"
-    titleh2=""
-  ></include>
+  <include src="./collapsable-header.html" title="Comparte" iconImg="fas fa-share-alt" titleh2=""></include>
 
   <div class="share collapsable__container">
-    <button type="button" class="share__button js-share-btn">
-      <i class="far fa-id-card"></i
-      ><span class="share__button--text"> Crear tarjeta </span>
+    <button type="submit" class="share__button--dis js-share-btn" disabled>
+      <i class="far fa-id-card"></i><span class="share__button--text"> Crear tarjeta </span>
     </button>
+    <div class="shareclick">
+      <div class="shareclick__line"></div>
+      <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
+      <p class="shareclick__text js-card-link"></p>
+
+      <button type="button" class="shareclick__twitter js-twitter-btn">
+        <i class="fab fa-twitter"></i>
+        <a href="" class="js-twitter-link shareclick__twitter--text" data-show-count="false" target="_blank"
+          >Compartir en twitter</a
+        >
+      </button>
+    </div>
   </div>
 </section>

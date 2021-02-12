@@ -1,5 +1,6 @@
 .share {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: rem(30) 0 rem(70);
   &__button {
@@ -21,6 +22,81 @@
     &--text {
       font-size: rem(18);
       padding: rem(14) 0;
+    }
+    &--dis {
+      background-color: $bt-click;
+      width: rem(199);
+      height: rem(50);
+      border-radius: rem(12);
+      color: white;
+      text-transform: uppercase;
+      font-family: $font-text;
+      font-size: rem(22);
+      border: none;
+      margin: auto;
+      box-shadow: 0 0 rem(5) $shadow;
+    }
+  }
+}
+
+.shareclick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(33) 0 rem(30);
+  text-align: center;
+  &__button {
+    background-color: $bt-click;
+    width: rem(199);
+    height: rem(50);
+    border-radius: rem(12);
+    color: white;
+    text-transform: uppercase;
+    font-family: $font-text;
+    font-size: rem(22);
+    border: none;
+    margin: auto;
+    &--text {
+      font-size: rem(18);
+      padding: rem(14) 0;
+    }
+  }
+  &__line {
+    border-top: solid 1px $footer-border;
+    margin-top: rem(30);
+  }
+  &__title {
+    font-family: $font-text;
+    font-weight: 600;
+    font-size: rem(18);
+    color: $secondary-text;
+    margin-top: rem(20);
+  }
+  &__text {
+    font-family: $font-text;
+    font-weight: 600;
+    color: $icons;
+    font-size: rem(12);
+    margin-top: rem(20);
+    margin-bottom: rem(10);
+  }
+  &__twitter {
+    cursor: pointer;
+    width: rem(181);
+    height: rem(30);
+    background-color: $twitter-bg;
+    color: white;
+    border-radius: rem(3);
+    border: none;
+    margin: auto;
+    box-shadow: 0 0 rem(5) $shadow;
+    &:hover {
+      background-color: $icons;
+    }
+    &--text {
+      font-family: $footer-text;
+      font-size: rem(14);
+      color: white;
     }
   }
 }
