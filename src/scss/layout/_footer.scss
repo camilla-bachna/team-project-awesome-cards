@@ -3,16 +3,15 @@
   width: 100%;
   border-top: solid rem(1) $footer-border;
   background-color: white;
-  height: rem(110);
-  @include tablet {
-   height: rem(60);
-  }
+
   &__container {
     display: flex;
     flex-direction: column;
+    height: rem(110);
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
+      height: rem(60);
     }
   }
   &__copyright {

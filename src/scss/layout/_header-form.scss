@@ -1,5 +1,6 @@
 .header {
   &__wrapper {
+    height: rem(110);
     @include tablet {
       margin: 0 auto;
       max-width: 990px;
@@ -10,7 +11,7 @@
   }
   &__img {
     width: rem(200);
-    padding: rem(30) 0 rem(30) rem(40);
+    padding: rem(15) rem(40);
     box-sizing: content-box;
   }
 }
