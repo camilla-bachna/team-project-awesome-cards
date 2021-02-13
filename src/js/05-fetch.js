@@ -4,6 +4,7 @@
 const shareButton = document.querySelector('.js-share-btn');
 const cardResult = document.querySelector('.js-shareclick');
 const linkElement = document.querySelector('.js-card-link');
+const twitterHiddenElement = document.querySelector('.js-twitter-share');
 
 let shareLink = '';
 
@@ -33,6 +34,10 @@ function handleCreateBtn(ev) {
         cardResult.innerHTML = data.error;
       }
     });
+  shareButton.classList.remove('share__button');
+  shareButton.classList.add('share__button--dis');
+  shareButton.disabled = true;
+  twitterHiddenElement.classList.remove('hidden-share');
 }
 
 shareButton.addEventListener('click', handleCreateBtn);
