@@ -15,7 +15,7 @@ También puedes ver y usar la aplicación a través de este enlace.
 De forma sencilla e intuitiva. La página de inicio sirve de carta de presentación del proyecto, cuyo objetivo es crear contactos profesionales cómodamente. En la landing page también te adelantamos lo que puedes hacer con esta herramienta: diseñar una tarjeta, rellenarla con tus datos y compartirla. Clica en 'Comenzar' y ¡que empiece la aventura! 🤓 🌋
 
 ## Por qué nuestro adorable cthulhu:
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+!Adalab/project-promo-l-module-2-team-7[Landing Creatures of JS](https://raw.githubusercontent.com/Adalab/project-promo-l-module-2-team-7/src/images/title-creatures.png)
 
 Al empezar a trabajar con Javascript nos sentiamos algo perdidas y sin saber qué ni cómo hacer las cosas, pero poco a poco fuimos avanzando, sintiendónos unas pobres criaturitas de JS al amparo de de cthulhu esperando poder aprender todo lo necesario para poder sacar adelante este proyecto y cuántos se nos presentasen por delante.
 
