@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 'use strict';
 
@@ -11,10 +12,19 @@ let shareLink = '';
 function handleCreateBtn(ev) {
   ev.preventDefault();
 
-  const url = 'https://profileawesome.herokuapp.com/card';
-  // eslint-disable-next-line no-undef
-  const data = getUserData();
+  fetchAPI();
 
+  shareButton.classList.remove('share__button');
+  shareButton.classList.add('share__button--dis');
+  shareButton.disabled = true;
+  twitterHiddenElement.classList.remove('hidden-share');
+}
+
+shareButton.addEventListener('click', handleCreateBtn);
+
+function fetchAPI() {
+  const url = 'https://profileawesome.herokuapp.com/card';
+  const data = getUserData();
   fetch(url, {
     method: 'POST',
     body: JSON.stringify(data),
@@ -34,10 +44,4 @@ function handleCreateBtn(ev) {
         cardResult.innerHTML = data.error;
       }
     });
-  shareButton.classList.remove('share__button');
-  shareButton.classList.add('share__button--dis');
-  shareButton.disabled = true;
-  twitterHiddenElement.classList.remove('hidden-share');
 }
-
-shareButton.addEventListener('click', handleCreateBtn);
