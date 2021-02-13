@@ -9,10 +9,11 @@ function resetAll() {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     inputElement.value = inputTextConfig.defaultValue;
   }
-
   clearPhoto();
   updateAllInputs();
   clearInputs();
+  removeFromLocalStorage();
+  localStorage.clear();
 }
 
 function clearInputs() {

@@ -49,3 +49,9 @@ function getFromLocalStorage() {
     updatePhoto();
   }
 }
+
+function removeFromLocalStorage() {
+  const userData = localStorage.getItem('userData');
+  const savedData = JSON.parse(userData);
+  localStorage.removeItem(savedData);
+}
