@@ -1,64 +1,65 @@
 .form {
-	@include openRegular;
-	&__label {
-		display: block;
-		color: $main-text;
-		margin-bottom: rem(7);
-		@include sizeLine(rem(14), rem(20));
-		&--bt {
-			width: rem(140);
-			height: rem(30);
-			color: white;
-			background-color: $icons;
-			border: none;
-			border-radius: rem(3);
-			box-shadow: 0 0 rem(5) $shadow;
-			margin-bottom: rem(20);
-			font-size: rem(14);
-			cursor: pointer;
-			&:hover {
-				background-color: $bt;
-			}
-		}
-	}
-	&__input {
-		font-family: $font-text;
-		width: 100%;
-		height: rem(30);
-		border: rem(1) $border solid;
-		padding: rem(3) 0 rem(7) rem(9);
-		margin-bottom: rem(20);
-		&::placeholder {
-			@include openRegular {
-				@include sizeLine(rem(14), rem(20));
-				color: $placeholder-text;
-			}
-		}
-	}
-	&__img--container {
-		width: rem(30);
-		height: rem(30);
-		border: rem(1) $border solid;
-		margin-left: rem(20);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	&--required {
-		color: $icons;
-		font-weight: bold;
-	}
+  @include openRegular;
+  &__label {
+    display: block;
+    color: $main-text;
+    margin-bottom: rem(7);
+    @include sizeLine(rem(14), rem(20));
+    &--bt {
+      width: rem(140);
+      height: rem(30);
+      color: white;
+      background-color: $icons;
+      border: none;
+      border-radius: rem(3);
+      box-shadow: 0 0 rem(5) $shadow;
+      margin-bottom: rem(20);
+      font-size: rem(14);
+      cursor: pointer;
+      transition: 0.7s background-color ease-in;
+      &:hover {
+        background-color: $bt;
+      }
+    }
+  }
+  &__input {
+    font-family: $font-text;
+    width: 100%;
+    height: rem(30);
+    border: rem(1) $border solid;
+    padding: rem(3) 0 rem(7) rem(9);
+    margin-bottom: rem(20);
+    &::placeholder {
+      @include openRegular {
+        @include sizeLine(rem(14), rem(20));
+        color: $placeholder-text;
+      }
+    }
+  }
+  &__img--container {
+    width: rem(30);
+    height: rem(30);
+    border: rem(1) $border solid;
+    margin-left: rem(20);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--required {
+    color: $icons;
+    font-weight: bold;
+  }
 }
 
 .form__label-div {
-	display: flex;
+  display: flex;
 }
 .hidden {
-	display: none;
+  display: none;
 }
 .fieldset {
-	border: none;
+  border: none;
 }
 .data {
-	margin-top: rem(25);
+  margin-top: rem(25);
 }

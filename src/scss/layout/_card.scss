@@ -37,6 +37,7 @@
     background-color: transparent;
     margin: 0 rem(150) rem(20) 0;
     cursor: pointer;
+    transition: 0.7s background-color ease-in, 0.7s color ease-in;
     &:hover {
       color: white;
       background-color: $icons;
@@ -64,7 +65,7 @@
       display: block;
       width: rem(240);
       height: rem(200);
-      background-image: url("../images/cardPhoto.png");
+      background-image: url('../images/cardPhoto.png');
       background-size: cover;
       background-position: center;
     }

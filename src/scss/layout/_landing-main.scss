@@ -18,7 +18,7 @@
     margin-top: 16.5vh;
     width: rem(250);
     @include tablet {
-      margin-top: 27vh;
+      margin-top: 25vh;
       width: rem(350);
     }
   }
@@ -111,6 +111,11 @@
     @include tablet {
       margin-bottom: 2vh;
     }
+    transition: 0.7s transform ease-in, 0.7s background-color ease-in;
+    &:hover {
+      background-color: $icons;
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -120,6 +125,20 @@
 @keyframes flyinTop {
   0% {
     transform: translatey(rem(-1000));
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.fly-in-bottom {
+  animation: flyinBottom 1.5s ease-in;
+}
+@keyframes flyinBottom {
+  0% {
+    transform: translatey(rem(1000));
     opacity: 0;
   }
   100% {
