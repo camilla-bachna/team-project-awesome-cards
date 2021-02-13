@@ -3,6 +3,7 @@
     height: rem(110);
     @include tablet {
       margin: 0 auto;
+      padding-bottom: rem(20);
       max-width: 990px;
     }
   }
@@ -11,7 +12,8 @@
   }
   &__img {
     width: rem(200);
-    padding: rem(15) rem(40);
+    padding: 0 rem(40);
+    margin-top: rem(15);
     box-sizing: content-box;
   }
 }
