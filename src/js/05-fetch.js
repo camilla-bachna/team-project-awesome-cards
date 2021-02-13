@@ -4,7 +4,7 @@
 
 const shareButton = document.querySelector('.js-share-btn');
 const cardResult = document.querySelector('.js-shareclick');
-const linkElement = document.querySelector('.js-card-link');
+
 const twitterHiddenElement = document.querySelector('.js-twitter-share');
 
 let shareLink = '';
@@ -38,7 +38,7 @@ function fetchAPI() {
       if (data.success === true) {
         data.cardURL;
         shareLink = data.cardURL;
-
+        const linkElement = document.querySelector('.js-card-link');
         linkElement.innerHTML = `<a href="${shareLink}" class="shareclick__text js-shareclick" target="_blank">${shareLink}</a>;`;
       } else {
         cardResult.innerHTML = data.error;
