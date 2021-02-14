@@ -34,3 +34,6 @@ Todos estos datos quedarán almacenados en el local storage para que crear nueva
 
 ### Comparte 📢:
 ¿Ya has rellenado todos tus datos? ¡A qué esperas para compartir! Pincha sobre el botón 'Crear tarjeta', recibe el link de tu tarjeta personalizada y compártela fácilmente y de forma inmediata a través de tu perfil de Twitter. De nada 😎.
+
+## Visita nuestra página 💻:
+Y por último, para adentrarte en todas las maravillas que te hemos contado, pincha en el siguiente enlace: [CREATURES OF JS profile-cards](https://beta.adalab.es/project-promo-l-module-2-team-7/ 'Creatures of JS').
