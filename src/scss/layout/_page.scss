@@ -16,9 +16,7 @@
 .bg {
   &__container {
     background-image: linear-gradient(to bottom, $main-bg, white);
-    @include tablet {
-      background-image: linear-gradient(to bottom, $main-bg, white);
-    }
+
     &--card {
       @include tablet {
         margin: 20px 40px 20px 30px;

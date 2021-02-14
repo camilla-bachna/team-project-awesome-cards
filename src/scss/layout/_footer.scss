@@ -2,12 +2,12 @@
   grid-row: 2;
   width: 100%;
   border-top: solid rem(1) $footer-border;
-  background-color: white;
 
   &__container {
     display: flex;
     flex-direction: column;
     height: rem(110);
+    background-color: white;
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
