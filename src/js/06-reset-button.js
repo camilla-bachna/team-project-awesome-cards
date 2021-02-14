@@ -13,7 +13,7 @@ function resetAll() {
   updateAllInputs();
   clearInputs();
   removeFromLocalStorage();
-  localStorage.clear();
+  
 }
 
 function clearInputs() {
