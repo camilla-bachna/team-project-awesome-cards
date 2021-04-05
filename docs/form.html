@@ -110,9 +110,16 @@
               </h2>
 
 
-              <form action="/signup" class="form collapsable__container js-form" method="POST" name="fill-form">
+              <form
+                action="/signup"
+                class="form collapsable__container js-form"
+                method="POST"
+                name="fill-form"
+              >
                 <fieldset class="fieldset data">
-                  <label for="name" class="form__label">Nombre completo <span class="form--required">*</span></label>
+                  <label for="name" class="form__label"
+                    >Nombre completo <span class="form--required">*</span></label
+                  >
                   <input
                     id="name"
                     name="name"
@@ -122,7 +129,9 @@
                     required
                   />
 
-                  <label for="job" class="form__label">Puesto <span class="form--required">*</span></label>
+                  <label for="job" class="form__label"
+                    >Puesto <span class="form--required">*</span></label
+                  >
                   <input
                     id="job"
                     name="job"
@@ -134,16 +143,27 @@
                 </fieldset>
 
                 <fieldset class="fieldset">
-                  <label for="photo" class="form__label">Imagen de perfil <span class="form--required">*</span></label>
+                  <label for="photo" class="form__label"
+                    >Imagen de perfil <span class="form--required">*</span></label
+                  >
                   <div class="form__label-div">
-                    <button class="form__label--bt js__profile-trigger">Añadir imagen</button>
-                    <input id="photo" name="photo" type="file" class="js__profile-upload-btn hidden js-input-text" />
+                    <button class="form__label--bt js__profile-trigger">
+                      Añadir imagen
+                    </button>
+                    <input
+                      id="photo"
+                      name="photo"
+                      type="file"
+                      class="js__profile-upload-btn hidden js-input-text"
+                    />
                     <div class="form__img--container js__profile-preview js-photo"></div>
                   </div>
                 </fieldset>
 
                 <fieldset class="fieldset social">
-                  <label for="email" class="form__label">Email <span class="form--required">*</span></label>
+                  <label for="email" class="form__label"
+                    >Email <span class="form--required">*</span></label
+                  >
                   <input
                     id="email"
                     name="email"
@@ -153,16 +173,21 @@
                     required
                   />
 
-                  <label for="phone" class="form__label">Teléfono</label>
+                  <label for="phone" class="form__label"
+                    >Teléfono <span class="form--required">*</span></label
+                  >
                   <input
                     id="phone"
                     name="phone"
                     type="tel"
                     class="form__input js-phone js-input-text"
                     placeholder="Ej: 666 66 66 66"
+                    required
                   />
 
-                  <label for="linkedin" class="form__label">Linkedin <span class="form--required">*</span></label>
+                  <label for="linkedin" class="form__label"
+                    >Linkedin <span class="form--required">*</span></label
+                  >
                   <input
                     id="linkedin"
                     name="linkedin"
@@ -172,7 +197,9 @@
                     required
                   />
 
-                  <label for="github" class="form__label">GitHub <span class="form--required">*</span></label>
+                  <label for="github" class="form__label"
+                    >GitHub <span class="form--required">*</span></label
+                  >
                   <input
                     id="github"
                     name="github"
@@ -181,7 +208,9 @@
                     placeholder="Ej: frankensteins-monster"
                     required
                   />
-                  <label for="required-fields" class="form__label"><span class="form--required">*</span> Campos obligatorios</label>
+                  <label for="required-fields" class="form__label"
+                    ><span class="form--required">*</span> Campos obligatorios</label
+                  >
                 </fieldset>
               </form>
             </section>
@@ -193,21 +222,29 @@
               	<span class="fas fa-chevron-up article__icon--collapsible collapsable__header--arrow"></span>
               </h2>
 
-
               <div class="share collapsable__container">
                 <button type="submit" class="share__button js-share-btn">
-                  <i class="far fa-id-card"></i><span class="share__button--text"> Crear tarjeta </span>
+                  <i class="far fa-id-card"></i
+                  ><span class="share__button--text"> Crear tarjeta </span>
                 </button>
                 <div class="shareclick hidden-share js-twitter-share">
                   <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
                   <p class="shareclick__text js-card-link"></p>
-
                   <button type="button" class="shareclick__twitter js-twitter-btn">
                     <i class="fab fa-twitter"></i>
-                    <a href="" class="js-twitter-link shareclick__twitter--text" data-show-count="false" target="_blank"
+                    <a
+                      href=""
+                      class="js-twitter-link shareclick__twitter--text"
+                      data-show-count="false"
+                      target="_blank"
                       >Compartir en twitter</a
                     >
                   </button>
+                </div>
+                <div class="shareclick">
+                  <p class="shareclick__title hidden-share js-hidden-box">
+                    Necesitas rellenar todos los campos
+                  </p>
                 </div>
               </div>
             </section>
